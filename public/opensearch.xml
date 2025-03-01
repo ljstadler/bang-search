@@ -1,0 +1,8 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Bang Search</ShortName>
+  <Description>Search engine based on Unduck, using Kagi bangs</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="32" height="32" type="image/x-icon">https://bang-search.pages.dev/favicon.ico</Image>
+  <Url type="text/html" template="https://bang-search.pages.dev?q={searchTerms}"/>
+</OpenSearchDescription>
