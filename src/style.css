@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 5px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
