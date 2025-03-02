@@ -1,7 +1,16 @@
+:root {
+    font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: "Inter var", sans-serif;
+    }
+}
+
 body {
     background-color: black;
     color: white;
-    font-family: Arial;
+    font-weight: bold;
     height: 100vh;
     margin: 0;
     display: flex;
@@ -9,33 +18,33 @@ body {
     justify-content: center;
 }
 
-#settings {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label {
-    font-weight: bold;
-}
-
 input {
+    font-weight: inherit;
     background-color: black;
     color: white;
     border: 1px solid white;
     border-radius: 5px;
     outline: none;
-    margin-top: 5px;
-    font-weight: bold;
     padding: 5px;
+    width: 18rem;
 }
 
 button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
     background-color: white;
-    color: black;
-    font-weight: bold;
-    border: 1px solid white;
+    border: none;
     border-radius: 5px;
-    margin-top: 5px;
     padding: 5px;
+}
+
+button:active {
+    background-color: lightgrey;
+}
+
+#search {
+    border: 1px solid grey;
 }
