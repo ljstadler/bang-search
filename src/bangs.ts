@@ -1802,6 +1802,7 @@ export const bangs: Record<string, string> = {
     "claude": "https://claude.ai/new?q={{{s}}}",
     "t3": "https://www.t3.chat/new?q={{{s}}}",
     "lechat": "https://chat.mistral.ai/chat?q={{{s}}}",
+    "opr": "https://openrouter.ai/models?q={{{s}}}",
     "chatters": "https://chatters.ca/catalogsearch/result/?q={{{s}}}",
     "chequeado": "https://chequeado.com/?s={{{s}}}",
     "chd": "https://camphikedrive.blogspot.com.au/search?q={{{s}}}&m=1",
