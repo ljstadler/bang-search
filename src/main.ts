@@ -23,7 +23,7 @@ const homePage = () => {
 
     const defaultInput = document.querySelector<HTMLInputElement>("#default")!;
     const saveButton = document.querySelector<HTMLButtonElement>("#save")!;
-    const saveIcon = document.querySelector("#save-icon")!;
+    const saveIcon = document.querySelector("#save-icon")! as any;
 
     saveButton.addEventListener("click", () => {
         localStorage.setItem("defaultBang", defaultInput.value);
@@ -36,7 +36,7 @@ const homePage = () => {
 
     const searchInput = document.querySelector<HTMLInputElement>("#search")!;
     const copyButton = document.querySelector<HTMLButtonElement>("#copy")!;
-    const copyIcon = document.querySelector("#copy-icon")!;
+    const copyIcon = document.querySelector("#copy-icon")! as any;
 
     copyButton.addEventListener("click", async () => {
         await navigator.clipboard.writeText(searchInput.value);

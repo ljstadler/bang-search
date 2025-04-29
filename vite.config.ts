@@ -5,7 +5,6 @@ export default defineConfig({
     plugins: [
         VitePWA({
             registerType: "autoUpdate",
-            manifest: { theme_color: "black" },
         }),
     ],
 });
