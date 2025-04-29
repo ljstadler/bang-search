@@ -1,56 +1,49 @@
 import { bangs } from "./bangs";
-import "./style.css";
 
 const defaultBang = localStorage.getItem("defaultBang") ?? "ddg";
 
 const homePage = () => {
     document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-        <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
-            <div>
-                <label for="default">Default Bang</label>
-                <div style="display: flex; gap: 5px;">
-                    <input id="default" type="text" value="${defaultBang}" />
-                    <button id="save" title="Save">
-                        <img id="save-icon" src="/save.svg" alt="Save" />
-                    </button>
-                </div>
-            </div>
+        <label class="uk-form-label" for="default">Default Bang</label>
+        <div class="flex gap-1">
+            <input id="default" class="uk-input w-80" type="text" value="${defaultBang}" />
+            <button id="save" class="uk-btn uk-btn-default uk-btn-icon" title="Save">
+                <uk-icon id="save-icon" icon="save"></uk-icon>
+            </button>
+        </div>
 
-            <div>
-                <label for="search">Search URL</label>
-                <div style="display: flex; gap: 5px;">
-                    <input id="search" type="text" value="https://bang-search.pages.dev?q=%s" disabled />
-                    <button id="copy" title="Copy">
-                        <img id="copy-icon" src="/copy.svg" alt="Copy" />
-                    </button>
-                </div>
-            </div>
+        <label class="uk-form-label" for="search">Search URL</label>
+        <div class="flex gap-1">
+            <input id="search" class="uk-input w-80" type="text" value="https://bang-search.pages.dev?q=%s" disabled />
+            <button id="copy" class="uk-btn uk-btn-default uk-btn-icon" title="Copy">
+                <uk-icon id="copy-icon" icon="copy"></uk-icon>
+            </button>
         </div>
 `;
 
     const defaultInput = document.querySelector<HTMLInputElement>("#default")!;
     const saveButton = document.querySelector<HTMLButtonElement>("#save")!;
-    const saveIcon = document.querySelector<HTMLImageElement>("#save-icon")!;
+    const saveIcon = document.querySelector("#save-icon")!;
 
     saveButton.addEventListener("click", () => {
         localStorage.setItem("defaultBang", defaultInput.value);
 
-        saveIcon.src = "/check.svg";
+        saveIcon.icon = "check";
         setTimeout(() => {
-            saveIcon.src = "/save.svg";
+            saveIcon.icon = "save";
         }, 2000);
     });
 
     const searchInput = document.querySelector<HTMLInputElement>("#search")!;
     const copyButton = document.querySelector<HTMLButtonElement>("#copy")!;
-    const copyIcon = document.querySelector<HTMLImageElement>("#copy-icon")!;
+    const copyIcon = document.querySelector("#copy-icon")!;
 
     copyButton.addEventListener("click", async () => {
         await navigator.clipboard.writeText(searchInput.value);
 
-        copyIcon.src = "/check.svg";
+        copyIcon.icon = "check";
         setTimeout(() => {
-            copyIcon.src = "/copy.svg";
+            copyIcon.icon = "copy";
         }, 2000);
     });
 };
