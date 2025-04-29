@@ -1,6 +1,6 @@
 import { bangs } from "./bangs";
 
-const defaultBang = localStorage.getItem("defaultBang") ?? "ddg";
+const defaultBang = localStorage.getItem("defaultBang") ?? "g";
 
 const homePage = () => {
     document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
