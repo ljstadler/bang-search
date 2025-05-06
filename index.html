@@ -1,78 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link
-            rel="search"
-            type="application/opensearchdescription+xml"
-            title="Bang Search"
-            href="/opensearch.xml"
-        />
-        <link rel="preconnect" href="https://rsms.me/" />
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-        <style>
-            :root {
-                font-family: Inter, sans-serif;
-                font-feature-settings: "liga" 1, "calt" 1;
-            }
-            @supports (font-variation-settings: normal) {
-                :root {
-                    font-family: InterVariable, sans-serif;
-                }
-            }
-        </style>
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/franken-ui@internal/dist/css/core.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/franken-ui@internal/dist/css/utilities.min.css"
-        />
-
-        <script>
-            const htmlElement = document.documentElement;
-
-            const __FRANKEN__ = JSON.parse(
-                localStorage.getItem("__FRANKEN__") || "{}"
-            );
-
-            if (
-                __FRANKEN__.mode === "dark" ||
-                (!__FRANKEN__.mode &&
-                    window.matchMedia("(prefers-color-scheme: dark)").matches)
-            ) {
-                htmlElement.classList.add("dark");
-            } else {
-                htmlElement.classList.remove("dark");
-            }
-
-            htmlElement.classList.add(__FRANKEN__.theme || "uk-theme-zinc");
-            htmlElement.classList.add(__FRANKEN__.radii || "uk-radii-md");
-            htmlElement.classList.add(__FRANKEN__.shadows || "uk-shadows-sm");
-            htmlElement.classList.add(__FRANKEN__.font || "uk-font-base");
-        </script>
-
-        <script
-            type="module"
-            src="https://unpkg.com/franken-ui@internal/dist/js/core.iife.js"
-        ></script>
-        <script
-            type="module"
-            src="https://unpkg.com/franken-ui@internal/dist/js/icon.iife.js"
-        ></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+            name="theme-color"
+            media="(prefers-color-scheme: light)"
+            content="#ffffff"
+        />
+        <meta
+            name="theme-color"
+            media="(prefers-color-scheme: dark)"
+            content="#09090b"
+        />
         <meta
             name="description"
             content="Search engine based on Unduck, using Kagi bangs"
         />
+        <link rel="manifest" href="/manifest.json" />
         <title>Bang Search</title>
     </head>
-    <body
-        class="bg-background text-foreground flex items-center justify-center h-screen m-0"
-    >
+    <body>
         <div id="app"></div>
-        <script type="module" src="/src/main.ts"></script>
+        <script type="module" src="/src/main.tsx"></script>
     </body>
 </html>
