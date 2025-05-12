@@ -2,7 +2,7 @@
     <ShortName>Bang Search</ShortName>
     <Description>Search engine based on Unduck, using Kagi bangs</Description>
     <InputEncoding>UTF-8</InputEncoding>
-    <Image width="32" height="32" type="image/x-icon">https://bang-search.pages.dev/favicon.ico</Image>
+    <Image width="48" height="48" type="image/svg+xml">https://bang-search.pages.dev/favicon.svg</Image>
     <Url type="application/opensearchdescription+xml" rel="self" template="https://bang-search.pages.dev/opensearch.xml"/>
     <Url type="text/html" template="https://bang-search.pages.dev/search?q={searchTerms}"/>
     <Url type="application/x-suggestions+json" template="https://www.google.com/suggest?q={searchTerms}&amp;client=chrome&amp;format=os"/>
