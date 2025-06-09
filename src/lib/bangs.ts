@@ -5722,7 +5722,7 @@ export const bangs: Record<string, string> = {
     "innerlightcrystals": "https://innerlightcrystals.co.uk/sales/index.php?main_page=advanced_search_result&keyword={{{s}}}&search_in_description=1",
     "inn": "https://www.israelnationalnews.com/Search.aspx?string={{{s}}}",
     "innooo": "https://www.innovativity.org/moteur-de-recherche-innooo.php?typerecherche=&item={{{s}}}",
-    "innsida": "https://innsida.ntnu.no/sok?site=innsida&query={{{s}}}&category=all",
+    "innsida": "https://innsida.ntnu.no/sok/?q={{{s}}}",
     "ino": "https://www.inoreader.com/search/{{{s}}}",
     "inp": "https://duckduckgo.com/?q=-site:pinterest.com+{{{s}}}&iar=images&iax=images&ia=images",
     "inpost": "https://inpost.pl/pl/pomoc/znajdz-przesylke?parcel={{{s}}}",
@@ -7695,7 +7695,7 @@ export const bangs: Record<string, string> = {
     "nde": "https://duckduckgo.com/?q={{{s}}}&iar=news&ia=news&kl=de-de",
     "ndeutsch": "https://www.neues-deutschland.de/suche/index.php?and={{{s}}}&s0_d=00&s0_m=00&s0_y=0000&s1_d=00&s1_m=00&s1_y=0000&modus=2&sort=1&searchfields[]=0&searchfields[]=1&searchfields[]=2&searchfields[]=3&searchfields[]=4&display=1&search=Suchen",
     "ndic": "https://endic.naver.com/search.nhn?query={{{s}}}",
-    "ndla": "https://ndla.no/en/search/apachesolr_search/{{{s}}}?language[]=und&filters=1/",
+    "ndla": "https://ndla.no/search?query={{{s}}}",
     "ndl": "https://ndlonline.ndl.go.jp/#!/search?keyword={{{s}}}",
     "nd": "https://onesearch.library.nd.edu/primo-explore/search?query=any,contains,{{{s}}}&tab=onesearch&search_scope=malc_blended&vid=NDU&lang=en_US&offset=0",
     "ndpr": "https://ndpr.nd.edu/search/?search_keyword=&as_sitesearch=ndpr.nd.edu&q={{{s}}}",
@@ -8285,7 +8285,7 @@ export const bangs: Record<string, string> = {
     "osmwiki": "https://wiki.openstreetmap.org/wiki/Special:Search?search={{{s}}}&go=Go",
     "osmw": "https://wiki.openstreetmap.org/w/index.php?title=Special:Search&search={{{s}}}",
     "osnews": "https://www.osnews.com/search?q={{{s}}}",
-    "os": "https://software.opensuse.org/search?utf8=%E2%9C%93&q={{{s}}}&search_devel=false&search_unsupported=false&baseproject=openSUSE:13.1",
+    "os": "https://software.opensuse.org/search?q={{{s}}}",
     "osrm": "https://map.project-osrm.org/?dest={{{s}}}",
     "osr": "https://old.reddit.com/r/{{{s}}}",
     "osrsge": "https://services.runescape.com/m=itemdb_oldschool/results?query={{{s}}}",
@@ -13356,7 +13356,7 @@ export const bangs: Record<string, string> = {
     "starteches": "https://www.startech.com/es-es/search?search_term={{{s}}}",
     "startechse": "https://www.startech.com/sv-se/search?search_term={{{s}}}",
     "startechch": "https://www.startech.com/de-ch/search?search_term={{{s}}}",
-    "kpr": "https://translate.kagi.com/?text={{{s}}}&from=Automatic&to=Proofread",
+    "kpr": "https://translate.kagi.com/proofread?text={{{s}}}&from=auto",
     "hac": "https://community.home-assistant.io/search?q={{{s}}}",
     "cdev": "https://developers.cloudflare.com/search/?query={{{s}}}",
     "hfd": "https://huggingface.co/datasets?search={{{s}}}",
@@ -13365,5 +13365,6 @@ export const bangs: Record<string, string> = {
     "melon": "https://www.melon.com/search/total/index.htm?q={{{s}}}",
     "genie": "https://www.genie.co.kr/search/searchMain?query={{{s}}}",
     "v0": "https://v0.dev/chat?q={{{s}}}",
-    "vibe": "https://vibe.naver.com/search?query={{{s}}}"
+    "vibe": "https://vibe.naver.com/search?query={{{s}}}",
+    "Libro": "https://libro.fm/search?utf8=%E2%9C%93&q={{{s}}}"
 };
