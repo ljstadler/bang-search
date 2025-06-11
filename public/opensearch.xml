@@ -1,0 +1,9 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+    <ShortName>Bang Search</ShortName>
+    <Description>Client-side !bang-powered search engine</Description>
+    <InputEncoding>UTF-8</InputEncoding>
+    <Image width="48" height="48" type="image/svg+xml">https://bang-search.pages.dev/favicon.svg</Image>
+    <Url type="application/opensearchdescription+xml" rel="self" template="https://bang-search.pages.dev/opensearch.xml"/>
+    <Url type="text/html" template="https://bang-search.pages.dev/search?q={searchTerms}"/>
+    <Url type="application/x-suggestions+json" template="https://www.google.com/suggest?q={searchTerms}&amp;client=chrome&amp;format=os"/>
+</OpenSearchDescription>
