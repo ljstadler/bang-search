@@ -17,7 +17,9 @@ jobs:
               uses: oven-sh/setup-bun@v2
 
             - name: Check
-              run: bun run build
+              run: |
+                  bun install
+                  bun run build
 
     auto-merge:
         needs: check
