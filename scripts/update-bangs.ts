@@ -12,6 +12,8 @@ type Bang = {
 
     const bangs = arr.reduce((obj, bang) => ((obj[bang.t] = bang.u), obj), {});
 
+    bangs["gweb"] = `${bangs["g"]}&udm=14`;
+
     Bun.write(
         "src/lib/bangs.ts",
         `export const bangs: Record<string, string> = ${JSON.stringify(
