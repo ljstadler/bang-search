@@ -7864,6 +7864,7 @@ export const bangs: Record<string, string> = {
     "nltk": "https://www.nltk.org/search.html?q={{{s}}}",
     "nlverbix": "https://www.verbix.com/webverbix/go.php?D1=24&T1={{{s}}}",
     "nlw": "https://nolife-wiki.fr/index.php?title=Spécial:Recherche&go=Lire&search={{{s}}}",
+    "nlwc": "https://discover.library.wales/discovery/search?query=any,contains,{{{s}}}&tab=In_The_Library&search_scope=In_The_Library&vid=44WHELF_NLW:44WHELF_NLW_NUI&offset=0",
     "nmap": "https://map.naver.com/?query={{{s}}}",
     "nmc": "https://namemc.com/search?q={{{s}}}",
     "nmlegis": "https://nmlegis.gov/?q={{{s}}}",
