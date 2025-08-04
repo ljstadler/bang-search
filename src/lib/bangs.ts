@@ -1420,7 +1420,7 @@ export const bangs: Record<string, string> = {
     "brands": "https://www.brandsoftheworld.com/search/logo?search_api_views_fulltext={{{s}}}",
     "bratabase": "https://www.bratabase.com/search/?q={{{s}}}",
     "brave": "https://search.brave.com/search?q={{{s}}}",
-    "baseball": "https://www.baseball-reference.com/pl/player_search.cgi?search={{{s}}}",
+    "baseball": "https://www.baseball-reference.com/search/search.fcgi?hint=&search={{{s}}}",
     "brd": "https://boardreader.com/s/{{{s}}}.html",
     "breitbart": "https://www.breitbart.com/search/?s={{{s}}}",
     "brettspiele": "https://www.brettspiel-angebote.de/spiele/?s={{{s}}}&t=",
