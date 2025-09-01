@@ -6594,6 +6594,7 @@ export const bangs: Record<string, string> = {
     "nlb": "https://www.bibleserver.com/text/NLB/{{{s}}}",
     "nlde": "https://translate.google.com/#view=home&op=translate&sl=nl&tl=de&text={{{s}}}",
     "nlr": "https://newleftreview.org/search/hybrid?query={{{s}}}",
+    "nls": "https://search.nls.uk/discovery/search?query=any,contains,{{{s}}}&tab=MainCatalogue&search_scope=MainCatalogue&vid=44NLS_INST:44NLS_VU1&offset=0",
     "nltk": "https://www.nltk.org/search.html?q={{{s}}}",
     "nlverbix": "https://www.verbix.com/webverbix/go.php?D1=24&T1={{{s}}}",
     "nlw": "https://nolife-wiki.fr/index.php?title=Spécial:Recherche&go=Lire&search={{{s}}}",
