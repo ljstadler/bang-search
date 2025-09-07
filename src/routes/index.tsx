@@ -1,38 +1,27 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Check, Copy, Save } from "lucide-react";
-import { useState } from "react";
+import { Check, Copy } from "lucide-react";
 
 export const Route = createFileRoute("/")({
     component: App,
 });
 
 function App() {
-    const [defaultBang, setDefaultBang] = useState(
-        localStorage.getItem("defaultBang") ?? "g"
-    );
+    const [searchUrl, setSearchUrl] = useState("/search?q=!g+%s");
 
-    const searchUrl = "https://bang-search.pages.dev/search?q=%s";
-
-    const [saving, setSaving] = useState(false);
     const [copying, setCopying] = useState(false);
-
-    const save = () => {
-        setSaving(true);
-        setTimeout(() => {
-            setSaving(false);
-        }, 2000);
-        localStorage.setItem("defaultBang", defaultBang);
-    };
 
     const copy = async () => {
         setCopying(true);
         setTimeout(() => {
             setCopying(false);
         }, 2000);
-        await navigator.clipboard.writeText(searchUrl);
+        await navigator.clipboard.writeText(
+            `https://bang-search.pages.dev${searchUrl}`
+        );
     };
 
     return (
@@ -43,30 +32,18 @@ function App() {
                     <Input
                         id="default"
                         type="text"
-                        value={defaultBang}
-                        onChange={(e) => setDefaultBang(e.target.value)}
+                        defaultValue="g"
+                        onChange={(e) =>
+                            setSearchUrl(`/search?q=!${e.target.value}+%s`)
+                        }
                     />
-                    <Button
-                        className="cursor-pointer"
-                        variant="outline"
-                        size="icon"
-                        onClick={save}
-                        disabled={saving}
-                    >
-                        {saving ? <Check /> : <Save />}
-                    </Button>
                 </div>
             </div>
 
             <div className="grid w-full max-w-sm items-center gap-1.5">
                 <Label htmlFor="search">Search URL</Label>
                 <div className="flex w-full max-w-sm items-center space-x-2">
-                    <Input
-                        id="search"
-                        type="text"
-                        defaultValue={searchUrl}
-                        disabled
-                    />
+                    <Input id="search" type="text" value={searchUrl} disabled />
                     <Button
                         className="cursor-pointer"
                         variant="outline"

@@ -1,13 +1,13 @@
 import { bangs } from "./bangs";
 
-export const getRedirectUrl = (query: string, defaultBang: string) => {
-    const match = query.match(/!(\S+)/i);
+export const getRedirectUrl = (query: string) => {
+    const matches = [...query.matchAll(/!(\S+)/gi)];
 
-    const trigger = match?.[1]?.toLowerCase() ?? "";
+    const trigger = matches.at(-1)?.[1] ?? "g";
 
-    const selectedBang = bangs[trigger] ?? bangs[defaultBang];
+    const selectedBang = bangs[trigger];
 
-    const cleanQuery = query.replace(/!\S+\s*/i, "").trim();
+    const cleanQuery = query.replace(/!\S+\s*/gi, "").trim();
 
     if (cleanQuery === "")
         return selectedBang ? `${new URL(selectedBang).origin}` : null;

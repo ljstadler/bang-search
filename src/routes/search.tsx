@@ -1,12 +1,8 @@
 import { getRedirectUrl } from "@/lib/redirect";
 import { createFileRoute, redirect } from "@tanstack/react-router";
 
-type Search = {
-    q: string;
-};
-
 export const Route = createFileRoute("/search")({
-    validateSearch: (search: Record<string, unknown>): Search => {
+    validateSearch: (search: Record<string, unknown>): { q: string } => {
         return {
             q: search.q as string,
         };
@@ -15,9 +11,7 @@ export const Route = createFileRoute("/search")({
     loader: ({ deps: { q } }) => {
         if (!q) throw redirect({ to: "/" });
 
-        const defaultBang = localStorage.getItem("defaultBang") ?? "g";
-
-        const url = getRedirectUrl(q, defaultBang);
+        const url = getRedirectUrl(q);
 
         if (!url) throw redirect({ to: "/" });
 
