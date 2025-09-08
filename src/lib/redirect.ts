@@ -5,7 +5,7 @@ export const getRedirectUrl = (query: string) => {
 
     const trigger = matches.at(-1)?.[1] ?? "g";
 
-    const selectedBang = bangs[trigger];
+    const selectedBang = bangs[trigger] ?? bangs["g"];
 
     const cleanQuery = query.replace(/!\S+\s*/gi, "").trim();
 
