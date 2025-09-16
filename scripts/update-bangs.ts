@@ -1,6 +1,7 @@
 type Bang = {
     t: string;
     u: string;
+    ts?: string[];
 };
 
 (async () => {
@@ -10,7 +11,16 @@ type Bang = {
 
     const arr: Bang[] = await data.json();
 
-    const bangs = arr.reduce((obj, bang) => ((obj[bang.t] = bang.u), obj), {});
+    const bangs: Record<string, string> = {};
+
+    for (const bang of arr) {
+        bangs[bang.t] = bang.u;
+        if (bang.ts) {
+            for (const t of bang.ts) {
+                bangs[t] = bang.u;
+            }
+        }
+    }
 
     bangs["gweb"] = `${bangs["g"]}&udm=14`;
 
