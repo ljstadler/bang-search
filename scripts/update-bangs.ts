@@ -13,6 +13,7 @@ type Bang = {
     const bangs = arr.reduce((obj, bang) => ((obj[bang.t] = bang.u), obj), {});
 
     bangs["gweb"] = `${bangs["g"]}&udm=14`;
+    bangs["shopping"] = `${bangs["g"]}&udm=28`;
 
     Bun.write(
         "src/lib/bangs.ts",

@@ -20,7 +20,7 @@ function App() {
             setCopying(false);
         }, 2000);
         await navigator.clipboard.writeText(
-            `https://bang-search.pages.dev${searchUrl}`
+            `${window.location.origin}${searchUrl}`
         );
     };
 
