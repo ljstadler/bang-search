@@ -1,15 +1,18 @@
 import { defineConfig } from "vite";
-import viteReact from "@vitejs/plugin-react";
+import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
-import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
+import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import { resolve } from "node:path";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
     plugins: [
-        TanStackRouterVite({ autoCodeSplitting: true }),
-        viteReact(),
+        tanstackRouter({
+            target: "react",
+            autoCodeSplitting: true,
+        }),
+        react(),
         tailwindcss(),
         VitePWA({ registerType: "autoUpdate" }),
     ],
