@@ -13,8 +13,6 @@ export const Route = createFileRoute("/search")({
 
         const url = getRedirectUrl(q);
 
-        if (!url) throw redirect({ to: "/" });
-
         throw redirect({ href: url });
     },
 });

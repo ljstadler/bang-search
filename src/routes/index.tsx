@@ -1,16 +1,19 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { Check, Copy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Check, Copy } from "lucide-react";
+import { defaultTrigger } from "@/lib/redirect";
 
 export const Route = createFileRoute("/")({
     component: App,
 });
 
 function App() {
-    const [searchUrl, setSearchUrl] = useState("/search?q=!g+%s");
+    const [searchUrl, setSearchUrl] = useState(
+        `/search?q=!${defaultTrigger}+%s`
+    );
 
     const [copying, setCopying] = useState(false);
 
@@ -32,7 +35,7 @@ function App() {
                     <Input
                         id="default"
                         type="text"
-                        defaultValue="g"
+                        defaultValue={defaultTrigger}
                         onChange={(e) =>
                             setSearchUrl(`/search?q=!${e.target.value}+%s`)
                         }
