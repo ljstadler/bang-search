@@ -13412,6 +13412,5 @@ export const bangs: Record<string, string> = {
     "vibe": "https://vibe.naver.com/search?query={{{s}}}",
     "winget": "https://winget.run/search?query={{{s}}}",
     "zed": "https://zed.dev/docs/?search={{{s}}}",
-    "libro": "https://libro.fm/search?utf8=%E2%9C%93&q={{{s}}}",
-    "gweb": "https://www.google.com/search?q={{{s}}}&udm=14"
+    "libro": "https://libro.fm/search?utf8=%E2%9C%93&q={{{s}}}"
 };
