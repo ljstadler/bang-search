@@ -32,7 +32,7 @@ type Bang = {
     }
 
     await Bun.write(
-        "public/bangs.txt",
+        "src/assets/bangs.txt",
         Object.entries(bangsTxt).map(([key, value]) => `${key}: ${value}\n`),
     );
 

@@ -56,7 +56,7 @@ export default function Index() {
             </div>
 
             <div className="bottom-4 fixed text-center text-ring text-sm">
-                <a className="hover:text-foreground" href="/bangs.txt">
+                <a className="hover:text-foreground" href="/bangs">
                     Bangs
                 </a>
                 &nbsp;•&nbsp;
