@@ -3,18 +3,25 @@ import { bangs } from "./bangs";
 export const defaultTrigger = "ecosia";
 
 export const getRedirectUrl = (query: string) => {
-    const candidates = [...query.matchAll(/!(\S+)/gi)].map((m) => m[1]);
+    const parts = query.trim().split(" ");
+    let trigger = defaultTrigger;
+    const cleanParts: string[] = [];
 
-    const trigger = candidates.findLast((c) => bangs[c]) ?? defaultTrigger;
+    for (const part of parts) {
+        if (part.startsWith("!") && bangs[part.substring(1)]) {
+            trigger = part.substring(1);
+        } else {
+            cleanParts.push(part);
+        }
+    }
 
     const selectedBang = bangs[trigger];
-
-    const cleanQuery = query.replace(/!\S+\s*/gi, "").trim();
+    const cleanQuery = cleanParts.join(" ");
 
     return cleanQuery === ""
         ? `${new URL(selectedBang).origin}`
         : selectedBang.replace(
               "{{{s}}}",
-              encodeURIComponent(cleanQuery).replace(/%2F/g, "/")
+              encodeURIComponent(cleanQuery).replaceAll("%2F", "/"),
           );
 };

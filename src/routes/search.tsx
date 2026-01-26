@@ -1,18 +1,14 @@
 import { getRedirectUrl } from "@/lib/redirect";
-import { createFileRoute, redirect } from "@tanstack/react-router";
+import { Redirect, useSearchParams } from "wouter";
 
-export const Route = createFileRoute("/search")({
-    validateSearch: (search: Record<string, unknown>): { q: string } => {
-        return {
-            q: search.q as string,
-        };
-    },
-    loaderDeps: ({ search: { q } }) => ({ q }),
-    loader: ({ deps: { q } }) => {
-        if (!q) throw redirect({ to: "/" });
+export default function Search() {
+    const [searchParams] = useSearchParams();
 
-        const url = getRedirectUrl(q);
+    const q = searchParams.get("q");
 
-        throw redirect({ href: url });
-    },
-});
+    if (!q) return <Redirect to="/" />;
+
+    const url = getRedirectUrl(q);
+
+    window.location.replace(url);
+}

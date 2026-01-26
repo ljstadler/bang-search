@@ -1,18 +1,13 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
-import { Check, Copy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { defaultTrigger } from "@/lib/redirect";
+import { Check, Copy } from "lucide-react";
+import { useState } from "react";
 
-export const Route = createFileRoute("/")({
-    component: App,
-});
-
-function App() {
+export default function Index() {
     const [searchUrl, setSearchUrl] = useState(
-        `/search?q=!${defaultTrigger}+%s`
+        `/search?q=!${defaultTrigger}+%s`,
     );
 
     const [copying, setCopying] = useState(false);
@@ -23,12 +18,12 @@ function App() {
             setCopying(false);
         }, 2000);
         await navigator.clipboard.writeText(
-            `${window.location.origin}${searchUrl}`
+            `${window.location.origin}${searchUrl}`,
         );
     };
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen m-0">
+        <div className="flex flex-col items-center justify-center h-screen m-0 p-2">
             <div className="grid w-full max-w-sm items-center gap-1.5 mb-2">
                 <Label htmlFor="default">Default Bang</Label>
                 <div className="flex w-full max-w-sm items-center space-x-2">
@@ -53,10 +48,25 @@ function App() {
                         size="icon"
                         onClick={copy}
                         disabled={copying}
+                        title="Copy"
                     >
                         {copying ? <Check /> : <Copy />}
                     </Button>
                 </div>
+            </div>
+
+            <div className="bottom-4 fixed text-center text-ring text-sm">
+                <a className="hover:text-foreground" href="/bangs.txt">
+                    Bangs
+                </a>
+                &nbsp;•&nbsp;
+                <a
+                    className="hover:text-foreground"
+                    href="https://github.com/ljstadler/bang-search"
+                    target="blank"
+                >
+                    GitHub
+                </a>
             </div>
         </div>
     );

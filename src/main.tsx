@@ -1,32 +1,15 @@
 import { StrictMode } from "react";
-import ReactDOM from "react-dom/client";
-import { RouterProvider, createRouter } from "@tanstack/react-router";
-
-import { routeTree } from "./routeTree.gen";
-
+import { createRoot } from "react-dom/client";
 import "./styles.css";
+import { Route, Switch } from "wouter";
+import Index from "./routes";
+import Search from "./routes/search";
 
-const router = createRouter({
-    routeTree,
-    context: {},
-    defaultPreload: "intent",
-    scrollRestoration: true,
-    defaultStructuralSharing: true,
-    defaultPreloadStaleTime: 0,
-});
-
-declare module "@tanstack/react-router" {
-    interface Register {
-        router: typeof router;
-    }
-}
-
-const rootElement = document.getElementById("app");
-if (rootElement && !rootElement.innerHTML) {
-    const root = ReactDOM.createRoot(rootElement);
-    root.render(
-        <StrictMode>
-            <RouterProvider router={router} />
-        </StrictMode>
-    );
-}
+createRoot(document.getElementById("root")!).render(
+    <StrictMode>
+        <Switch>
+            <Route path={"/"} component={Index} />
+            <Route path={"/search"} component={Search} />
+        </Switch>
+    </StrictMode>,
+);
