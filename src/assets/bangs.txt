@@ -4968,7 +4968,6 @@ Citadella Online Kaffee Shop: !kaffee
 Kafto: !kafto
 Kahoot: !kahoot
 Kahta Haber: !kahta
-kakaku.com: !kakaku
 Khan Academy: !ka !khanacademy !khan
 Kakijun.jp: !kakijun
 Како се пише: !kakosepise
@@ -6504,6 +6503,8 @@ npm: !npmjs !npm
 npms.io: !npms
 npm jump to: !njt
 NPM Trends: !npmtrends
+NPMX: !npmx
+Skills.sh: !skills
 NPO: !npo !uzg
 Nacionalni portal odprte znanosti: !npoz
 NPR.org: !npr
@@ -6671,7 +6672,7 @@ OLX.pl: !olxpl !olxpoland
 OLX Portugal: !olxpt
 OLX Romania: !olxro
 OLX Ukraine: !olxua
-OpenStreetMap: !openstreetmap !openstreet
+OpenStreetMap: !osm !openstreetmap !openstreet !openmaps !omap !ost
 World of O: !omaps
 Open Media Database: !omdb
 Omeka Forums: !omeka
