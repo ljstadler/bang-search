@@ -5,7 +5,7 @@ import { defaultTrigger } from "@/lib/redirect";
 import { Check, Copy } from "lucide-react";
 import { useState } from "react";
 
-export default function Index() {
+export function Index() {
     const [searchUrl, setSearchUrl] = useState(
         `/search?q=!${defaultTrigger}+%s`,
     );
