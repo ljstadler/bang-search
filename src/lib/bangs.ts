@@ -73959,8 +73959,8 @@ export const bangs = [
     },
     {
         "s": "Tidal",
-        "d": "listen.tidal.com",
-        "u": "https://listen.tidal.com/search/{{{s}}}",
+        "d": "tidal.com",
+        "u": "https://tidal.com/search/?q={{{s}}}",
         "ts": [
             "tidal"
         ]
@@ -80477,7 +80477,7 @@ export const bangs = [
         ]
     },
     {
-        "s": "Webster's Dictionary (1913) !websters Webster's Dictionary 1828 - Online Edition !owd Merriam-Webster Dictionary !mw Merriam-Webster Pronunciation !say Merriam-Webster's Learner's Dictionary !mwl Webster's Revised Unabridged Dictionary (1913)",
+        "s": "Webster's Dictionary (1913)",
         "d": "www.websters1913.com",
         "u": "https://www.websters1913.com/words/{{{s}}}",
         "ts": [
