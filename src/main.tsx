@@ -1,7 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+
 import "./styles.css";
 import { Route, Switch } from "wouter";
+
 import { Index } from "./routes";
 import { Bangs } from "./routes/bangs";
 import { Search } from "./routes/search";

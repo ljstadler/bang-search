@@ -24,8 +24,5 @@ type Bang = {
             ts: [bang.t, ...(bang.ts ?? [])],
         }));
 
-    await Bun.write(
-        "src/lib/bangs.ts",
-        `export const bangs = ${JSON.stringify(bangs, null, 4)}`,
-    );
+    await Bun.write("src/lib/bangs.ts", `export const bangs = ${JSON.stringify(bangs, null, 4)}`);
 })();

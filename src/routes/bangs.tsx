@@ -1,6 +1,7 @@
+import { useMemo, useState } from "react";
+
 import { Input } from "@/components/ui/input";
 import { bangs } from "@/lib/bangs";
-import { useMemo, useState } from "react";
 
 export function Bangs() {
     const [search, setSearch] = useState("");
@@ -18,7 +19,7 @@ export function Bangs() {
     }, [search]);
 
     return (
-        <div className="p-2 max-w-4xl mx-auto">
+        <div className="mx-auto max-w-4xl p-2">
             <Input
                 className="mb-2"
                 id="search"
@@ -27,7 +28,7 @@ export function Bangs() {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
             />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
+            <div className="grid grid-cols-1 gap-1.5 md:grid-cols-2 lg:grid-cols-3">
                 {filteredBangs.map((bang) => (
                     <a
                         key={bang.s}
@@ -35,13 +36,13 @@ export function Bangs() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <div className="p-2 border rounded h-full hover:bg-accent">
+                        <div className="hover:bg-accent h-full rounded border p-2">
                             <h3 className="font-bold">{bang.s}</h3>
-                            <div className="flex flex-wrap gap-1 mt-1">
+                            <div className="mt-1 flex flex-wrap gap-1">
                                 {bang.ts.map((t) => (
                                     <span
                                         key={t}
-                                        className="px-2 py-0.5 bg-primary text-primary-foreground text-xs rounded-full"
+                                        className="bg-primary text-primary-foreground rounded-full px-2 py-0.5 text-xs"
                                     >
                                         !{t}
                                     </span>

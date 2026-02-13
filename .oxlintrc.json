@@ -1,0 +1,6 @@
+{
+    "$schema": "./node_modules/oxlint/configuration_schema.json",
+    "env": { "browser": true },
+    "ignorePatterns": ["dist/**", "src/components/ui/**", "src/lib/bangs.ts"],
+    "plugins": ["react"]
+}

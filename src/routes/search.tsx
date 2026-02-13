@@ -1,5 +1,6 @@
-import { getRedirectUrl } from "@/lib/redirect";
 import { Redirect, useSearchParams } from "wouter";
+
+import { getRedirectUrl } from "@/lib/redirect";
 
 export function Search() {
     const [searchParams] = useSearchParams();

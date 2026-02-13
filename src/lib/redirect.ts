@@ -11,9 +11,7 @@ export const getRedirectUrl = (query: string) => {
 
     for (const part of parts) {
         if (part.startsWith("!")) {
-            const bang = bangs.find((bang) =>
-                bang.ts.includes(part.substring(1)),
-            );
+            const bang = bangs.find((bang) => bang.ts.includes(part.substring(1)));
             if (bang) {
                 selectedBang = bang;
                 continue;
@@ -26,8 +24,5 @@ export const getRedirectUrl = (query: string) => {
 
     return cleanQuery === ""
         ? `https://${selectedBang.d}`
-        : selectedBang.u.replace(
-              "{{{s}}}",
-              encodeURIComponent(cleanQuery).replaceAll("%2F", "/"),
-          );
+        : selectedBang.u.replace("{{{s}}}", encodeURIComponent(cleanQuery).replaceAll("%2F", "/"));
 };
