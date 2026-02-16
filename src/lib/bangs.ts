@@ -6588,7 +6588,7 @@ export const bangs = [
     {
         "s": "Books-A-Million",
         "d": "www.booksamillion.com",
-        "u": "https://www.booksamillion.com/search?query={{{s}}}",
+        "u": "https://www.booksamillion.com/search2?query={{{s}}}",
         "ts": [
             "bam"
         ]
@@ -10258,6 +10258,16 @@ export const bangs = [
         "u": "https://www.ultimate-guitar.com/search.php?s={{{s}}}&w=songs",
         "ts": [
             "btabs"
+        ]
+    },
+    {
+        "s": "Blockscan",
+        "d": "blockscan.com",
+        "u": "https://blockscan.com/home/searchaddress?searchAddress={{{s}}}",
+        "ts": [
+            "blockscan",
+            "bscan",
+            "bsc"
         ]
     },
     {
@@ -46847,8 +46857,8 @@ export const bangs = [
     },
     {
         "s": "Supreme Court of Indonesia",
-        "d": "putusan.mahkamahagung.go.id",
-        "u": "https://putusan.mahkamahagung.go.id/main/pencarian/?q={{{s}}}",
+        "d": "putusan3.mahkamahagung.go.id",
+        "u": "https://putusan3.mahkamahagung.go.id/search.html?q={{{s}}}",
         "ts": [
             "mari"
         ]
@@ -79948,7 +79958,7 @@ export const bangs = [
     {
         "s": "Waitrose",
         "d": "www.waitrose.com",
-        "u": "https://www.waitrose.com/shop/HeaderSearchCmd?searchTerm={{{s}}}",
+        "u": "https://www.waitrose.com/ecom/shop/search?searchTerm={{{s}}}",
         "ts": [
             "waitrose"
         ]
@@ -87976,6 +87986,17 @@ export const bangs = [
         "ts": [
             "arcwiki",
             "arcw"
+        ]
+    },
+    {
+        "s": "Tesaurus Tematis Badan Bahasa Indonesia",
+        "d": "tesaurus.kemendikdasmen.go.id",
+        "u": "https://tesaurus.kemendikdasmen.go.id/tematis/lema/{{{s}}}",
+        "ts": [
+            "tesaurus",
+            "sinonim",
+            "ttbi",
+            "tsbb"
         ]
     }
 ]
