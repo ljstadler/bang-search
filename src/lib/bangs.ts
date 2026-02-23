@@ -4085,11 +4085,12 @@ export const bangs = [
         ]
     },
     {
-        "s": "AP",
-        "d": "ap.org",
-        "u": "https://ap.org/?s={{{s}}}&orderby=",
+        "s": "AP News",
+        "d": "apnews.com",
+        "u": "https://apnews.com/search?q={{{s}}}",
         "ts": [
-            "ap"
+            "ap",
+            "apnews"
         ]
     },
     {
@@ -15970,6 +15971,14 @@ export const bangs = [
         ]
     },
     {
+        "s": "Cloudflare Domains",
+        "d": "domains.cloudflare.com",
+        "u": "https://domains.cloudflare.com/?domain={{{s}}}/",
+        "ts": [
+            "cdomain"
+        ]
+    },
+    {
         "s": "Cult of Mac",
         "d": "www.cultofmac.com",
         "u": "https://www.cultofmac.com/?s={{{s}}}",
@@ -19560,7 +19569,7 @@ export const bangs = [
     {
         "s": "DM.DE",
         "d": "www.dm.de",
-        "u": "https://www.dm.de/search/468652.html?type=product&q={{{s}}}",
+        "u": "https://www.dm.de/search?query={{{s}}}",
         "ts": [
             "dmde"
         ]
@@ -50073,7 +50082,7 @@ export const bangs = [
     {
         "s": "Mouser Electronics",
         "d": "www.mouser.com",
-        "u": "https://www.mouser.com/Search/Refine.aspx?Keyword={{{s}}}",
+        "u": "https://www.mouser.com/c/?q={{{s}}}",
         "ts": [
             "mouser"
         ]
