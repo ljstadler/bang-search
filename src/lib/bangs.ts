@@ -2345,6 +2345,18 @@ export const bangs = [
         ]
     },
     {
+        "s": "Blinkit",
+        "d": "blinkit.com",
+        "u": "https://blinkit.com/s/?q={{{s}}}",
+        "ts": [
+            "blinkit",
+            "bkt",
+            "bkit",
+            "bli",
+            "blink"
+        ]
+    },
+    {
         "s": "Aion Wiki",
         "d": "aion.wikia.com",
         "u": "https://aion.wikia.com/wiki/index.php?search={{{s}}}&fulltext=0",
@@ -31075,17 +31087,6 @@ export const bangs = [
             "gma",
             "go",
             "gmailh"
-        ]
-    },
-    {
-        "s": "Gemini",
-        "d": "gemini.google.com",
-        "u": "https://gemini.google.com/?prompt_text={{{s}}}",
-        "ts": [
-            "gemini",
-            "geminiai",
-            "gemai",
-            "gmai"
         ]
     },
     {
