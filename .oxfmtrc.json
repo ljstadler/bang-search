@@ -1,7 +1,7 @@
 {
     "$schema": "./node_modules/oxfmt/configuration_schema.json",
-    "experimentalSortImports": {},
-    "experimentalTailwindcss": {},
-    "ignorePatterns": ["dist/**", "src/components/ui/**", "src/lib/bangs.ts"],
+    "ignorePatterns": ["src/components/ui/**", "src/lib/bangs.ts"],
+    "sortImports": {},
+    "sortTailwindcss": {},
     "tabWidth": 4
 }
