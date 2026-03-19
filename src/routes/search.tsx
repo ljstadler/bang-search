@@ -1,4 +1,4 @@
-import { Redirect, useSearchParams } from "wouter";
+import { Navigate, useSearchParams } from "react-router";
 
 import { getRedirectUrl } from "@/lib/redirect";
 
@@ -7,7 +7,7 @@ export function Search() {
 
     const q = searchParams.get("q");
 
-    if (!q) return <Redirect to="/" />;
+    if (!q) return <Navigate to="/" />;
 
     const url = getRedirectUrl(q);
 
