@@ -10201,6 +10201,14 @@ export const bangs = [
         ]
     },
     {
+        "s": "PDSls",
+        "d": "pds.ls",
+        "u": "https://pds.ls/?q={{{s}}}",
+        "ts": [
+            "pdsls"
+        ]
+    },
+    {
         "s": "SignBSL",
         "d": "www.signbsl.com",
         "u": "https://www.signbsl.com/sign/{{{s}}}",
@@ -21292,7 +21300,7 @@ export const bangs = [
     {
         "s": "e926",
         "d": "e926.net",
-        "u": "https://e926.net/post/search?tags={{{s}}}",
+        "u": "https://e926.net/posts?tags={{{s}}}",
         "ts": [
             "e926"
         ]
@@ -28883,6 +28891,14 @@ export const bangs = [
         "u": "https://www.gamma.nl/assortiment/zoeken?text={{{s}}}",
         "ts": [
             "gamma"
+        ]
+    },
+    {
+        "s": "Kobo UK",
+        "d": "www.kobo.com",
+        "u": "https://www.kobo.com/gb/en/search?Query={{{s}}}",
+        "ts": [
+            "kobouk"
         ]
     },
     {
