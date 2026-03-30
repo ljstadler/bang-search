@@ -1236,7 +1236,8 @@ export const bangs = [
         "d": "www.amazon.com.be",
         "u": "https://www.amazon.com.be/s?k={{{s}}}",
         "ts": [
-            "amazonbe"
+            "amazonbe",
+            "abe"
         ]
     },
     {
@@ -81953,6 +81954,16 @@ export const bangs = [
         ]
     },
     {
+        "s": "wpt.fyi",
+        "d": "wpt.fyi",
+        "u": "https://wpt.fyi/results/?q={{{s}}}",
+        "ts": [
+            "wptfyi",
+            "wpts",
+            "wptf"
+        ]
+    },
+    {
         "s": "WindowParts",
         "d": "www.windowparts.co.uk",
         "u": "https://www.windowparts.co.uk/catalogsearch/result/?q={{{s}}}",
@@ -84173,8 +84184,8 @@ export const bangs = [
     },
     {
         "s": "Yandex Maps",
-        "d": "yandex.ru",
-        "u": "https://yandex.ru/maps/?text={{{s}}}",
+        "d": "ya.ru",
+        "u": "https://ya.ru/maps/?text={{{s}}}",
         "ts": [
             "yandexmaps",
             "yamaps",
@@ -84226,16 +84237,16 @@ export const bangs = [
     },
     {
         "s": "Yandex Video",
-        "d": "yandex.ru",
-        "u": "https://yandex.ru/video/search?text={{{s}}}",
+        "d": "ya.ru",
+        "u": "https://ya.ru/video/search?text={{{s}}}",
         "ts": [
             "yav"
         ]
     },
     {
         "s": "Yandex",
-        "d": "yandex.ru",
-        "u": "https://yandex.ru/search?text={{{s}}}",
+        "d": "ya.ru",
+        "u": "https://ya.ru/search?text={{{s}}}",
         "ts": [
             "ya",
             "yandex",
@@ -85669,8 +85680,8 @@ export const bangs = [
     },
     {
         "s": "Yandex Images",
-        "d": "yandex.ru",
-        "u": "https://yandex.ru/images/search?text={{{s}}}",
+        "d": "ya.ru",
+        "u": "https://ya.ru/images/search?text={{{s}}}",
         "ts": [
             "yai",
             "yak",
