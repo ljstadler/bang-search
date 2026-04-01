@@ -34,7 +34,7 @@ jobs:
               if: steps.metadata.outputs.dependency-group == 'dependencies'
               run: |
                   bun install
-                  bun lint
+                  bun run build
 
     auto-merge:
         needs: check
