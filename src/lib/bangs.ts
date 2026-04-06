@@ -5015,7 +5015,7 @@ export const bangs = [
     {
         "s": "ARIN Whois",
         "d": "whois.arin.net",
-        "u": "https://whois.arin.net/ui/query.do?queryinput={{{s}}}",
+        "u": "https://whois.arin.net/ui/?q={{{s}}}",
         "ts": [
             "arin"
         ]
