@@ -296,7 +296,10 @@ export const bangs = [
         "d": "2gis.ru",
         "u": "https://2gis.ru/search/{{{s}}}",
         "ts": [
-            "2gis"
+            "2gis",
+            "дубльгис",
+            "двагис",
+            "2гис"
         ]
     },
     {
@@ -1405,7 +1408,9 @@ export const bangs = [
         "d": "dic.academic.ru",
         "u": "https://dic.academic.ru/searchall.php?SWord={{{s}}}",
         "ts": [
-            "acad"
+            "acad",
+            "акад",
+            "академик"
         ]
     },
     {
@@ -1830,7 +1835,8 @@ export const bangs = [
         "d": "www.adme.ru",
         "u": "https://www.adme.ru/search/?q={{{s}}}",
         "ts": [
-            "adme"
+            "adme",
+            "адми"
         ]
     },
     {
@@ -6126,7 +6132,8 @@ export const bangs = [
         "d": "www.avito.ru",
         "u": "https://www.avito.ru/?q={{{s}}}",
         "ts": [
-            "avito"
+            "avito",
+            "авито"
         ]
     },
     {
@@ -8261,7 +8268,8 @@ export const bangs = [
         "u": "https://bigenc.ru/search?q={{{s}}}",
         "ts": [
             "bigenc",
-            "gre"
+            "gre",
+            "брэ"
         ]
     },
     {
@@ -11000,7 +11008,9 @@ export const bangs = [
         "u": "https://calendar.google.com/calendar/b/0/r/search?q={{{s}}}",
         "ts": [
             "gcal",
-            "calendar"
+            "calendar",
+            "календарь",
+            "гкал"
         ]
     },
     {
@@ -12571,7 +12581,8 @@ export const bangs = [
         "u": "https://www.google.com/search?q={{{s}}}&udm=50",
         "ts": [
             "gai",
-            "googleai"
+            "googleai",
+            "гии"
         ]
     },
     {
@@ -14330,7 +14341,8 @@ export const bangs = [
         "d": "mail.google.com",
         "u": "https://mail.google.com/mail/?view=cm&to=&su={{{s}}}",
         "ts": [
-            "compose"
+            "compose",
+            "письмо"
         ]
     },
     {
@@ -14518,7 +14530,9 @@ export const bangs = [
         "d": "www.consultant.ru",
         "u": "https://www.consultant.ru/search/?q={{{s}}}",
         "ts": [
-            "consplus"
+            "consplus",
+            "консультант",
+            "кплюс"
         ]
     },
     {
@@ -14546,7 +14560,8 @@ export const bangs = [
         "ts": [
             "contacts",
             "gc",
-            "gcontact"
+            "gcontact",
+            "контакты"
         ]
     },
     {
@@ -16242,7 +16257,9 @@ export const bangs = [
         "d": "cyberleninka.ru",
         "u": "https://cyberleninka.ru/search?q={{{s}}}",
         "ts": [
-            "cybl"
+            "cybl",
+            "кибл",
+            "киберленинка"
         ]
     },
     {
@@ -16366,7 +16383,10 @@ export const bangs = [
         "d": "www.drive2.ru",
         "u": "https://www.drive2.ru/search?text={{{s}}}",
         "ts": [
-            "d2r"
+            "d2r",
+            "drive2",
+            "драйв2",
+            "д2"
         ]
     },
     {
@@ -16382,7 +16402,8 @@ export const bangs = [
         "d": "dirty.ru",
         "u": "https://dirty.ru/search/?query={{{s}}}",
         "ts": [
-            "d3"
+            "d3",
+            "д3"
         ]
     },
     {
@@ -16422,7 +16443,8 @@ export const bangs = [
         "d": "daddyknows.ru",
         "u": "https://daddyknows.ru/?s={{{s}}}",
         "ts": [
-            "daddyknows"
+            "daddyknows",
+            "папазнает"
         ]
     },
     {
@@ -19699,7 +19721,8 @@ export const bangs = [
         "d": "www.dns-shop.ru",
         "u": "https://www.dns-shop.ru/search/?q={{{s}}}",
         "ts": [
-            "dnsshop"
+            "dnsshop",
+            "днс"
         ]
     },
     {
@@ -20532,7 +20555,9 @@ export const bangs = [
         "u": "https://drive.google.com/drive/search?q={{{s}}}",
         "ts": [
             "drive",
-            "gdrive"
+            "gdrive",
+            "гдиск",
+            "драйв"
         ]
     },
     {
@@ -20564,7 +20589,8 @@ export const bangs = [
         "d": "www.drom.ru",
         "u": "https://www.drom.ru/search/?q={{{s}}}",
         "ts": [
-            "drom"
+            "drom",
+            "дром"
         ]
     },
     {
@@ -21263,7 +21289,8 @@ export const bangs = [
         "d": "www.e1.ru",
         "u": "https://www.e1.ru/news/search/?search={{{s}}}",
         "ts": [
-            "e1"
+            "e1",
+            "е1"
         ]
     },
     {
@@ -21344,7 +21371,8 @@ export const bangs = [
         "d": "earth.google.com",
         "u": "https://earth.google.com/web/search/{{{s}}}",
         "ts": [
-            "earth"
+            "earth",
+            "земля"
         ]
     },
     {
@@ -25034,7 +25062,8 @@ export const bangs = [
         "d": "www.google.com",
         "u": "https://www.google.com/search?tbm=isch&tbs=itp:face&q={{{s}}}",
         "ts": [
-            "faces"
+            "faces",
+            "лица"
         ]
     },
     {
@@ -25310,7 +25339,8 @@ export const bangs = [
         "d": "fantlab.ru",
         "u": "https://fantlab.ru/searchmain?searchstr={{{s}}}",
         "ts": [
-            "fantlab"
+            "fantlab",
+            "фантлаб"
         ]
     },
     {
@@ -26836,7 +26866,9 @@ export const bangs = [
         "ts": [
             "fl",
             "gluck",
-            "lucky"
+            "lucky",
+            "гмп",
+            "фл"
         ]
     },
     {
@@ -28452,7 +28484,8 @@ export const bangs = [
         "d": "www.google.com",
         "u": "https://www.google.com/search?q={{{s}}}&tbo=1&num=100",
         "ts": [
-            "g100"
+            "g100",
+            "г100"
         ]
     },
     {
@@ -28937,7 +28970,10 @@ export const bangs = [
             "gp",
             "gplay",
             "play",
-            "playstore"
+            "playstore",
+            "гплей",
+            "плей",
+            "плейстор"
         ]
     },
     {
@@ -29173,7 +29209,8 @@ export const bangs = [
         "d": "www.google.com",
         "u": "https://www.google.com/search?nfpr=1&tbm=bks&q={{{s}}}",
         "ts": [
-            "gbooks"
+            "gbooks",
+            "гкниги"
         ]
     },
     {
@@ -29472,7 +29509,11 @@ export const bangs = [
         "u": "https://docs.google.com/document/u/0/?q={{{s}}}",
         "ts": [
             "gd",
-            "gdocs"
+            "gdocs",
+            "гд",
+            "гдок",
+            "гдокс",
+            "гдокументы"
         ]
     },
     {
@@ -29630,14 +29671,6 @@ export const bangs = [
         "u": "https://www.geeks-curiosity.net/?s={{{s}}}",
         "ts": [
             "geek"
-        ]
-    },
-    {
-        "s": "GeeksforGeeks",
-        "d": "www.geeksforgeeks.org",
-        "u": "https://www.geeksforgeeks.org/?s={{{s}}}",
-        "ts": [
-            "geeks"
         ]
     },
     {
@@ -30098,9 +30131,10 @@ export const bangs = [
     {
         "s": "geeksforgeeks",
         "d": "www.geeksforgeeks.org",
-        "u": "https://www.geeksforgeeks.org/?q={{{s}}}",
+        "u": "https://www.geeksforgeeks.org/search/?gq={{{s}}}",
         "ts": [
-            "gfg"
+            "gfg",
+            "geeks"
         ]
     },
     {
@@ -30237,7 +30271,8 @@ export const bangs = [
         "u": "https://groups.google.com/groups/search?q={{{s}}}&qt_s=Search+Groups",
         "ts": [
             "gg",
-            "ggroups"
+            "ggroups",
+            "гг"
         ]
     },
     {
@@ -30245,7 +30280,8 @@ export const bangs = [
         "d": "www.google.com",
         "u": "https://www.google.com/search?q={{{s}}}&site=webhp&tbm=isch&tbs=itp:animated",
         "ts": [
-            "ggif"
+            "ggif",
+            "ггиф"
         ]
     },
     {
@@ -30570,7 +30606,8 @@ export const bangs = [
         "d": "www.google.com",
         "u": "https://www.google.com/search?q={{{s}}}&tbm=isch&sout=1",
         "ts": [
-            "gic"
+            "gic",
+            "гкк"
         ]
     },
     {
@@ -31139,6 +31176,7 @@ export const bangs = [
             "gmap",
             "gmaps",
             "gm",
+            "гкарты",
             "googlemap",
             "googlemaps"
         ]
@@ -31539,7 +31577,8 @@ export const bangs = [
         "d": "www.google.ru",
         "u": "https://www.google.ru/search?q={{{s}}}&tbm=nws&cad=h",
         "ts": [
-            "gnru"
+            "gnru",
+            "гн"
         ]
     },
     {
@@ -32300,7 +32339,8 @@ export const bangs = [
         "d": "photos.google.com",
         "u": "https://photos.google.com/search/{{{s}}}",
         "ts": [
-            "gphotos"
+            "gphotos",
+            "гфото"
         ]
     },
     {
@@ -32468,7 +32508,8 @@ export const bangs = [
         "d": "gramota.ru",
         "u": "https://gramota.ru/slovari/dic/?word={{{s}}}&all=x",
         "ts": [
-            "gramota"
+            "gramota",
+            "грамота"
         ]
     },
     {
@@ -32818,7 +32859,11 @@ export const bangs = [
             "gsheet",
             "gsheets",
             "gsh",
-            "gspreadsheets"
+            "gspreadsheets",
+            "гш",
+            "гтаблицы",
+            "гшит",
+            "гшитс"
         ]
     },
     {
@@ -32858,7 +32903,12 @@ export const bangs = [
         "d": "slides.google.com",
         "u": "https://slides.google.com/presentation/u/0/?q={{{s}}}",
         "ts": [
-            "gslides"
+            "gslides",
+            "гслайд",
+            "гслайдс",
+            "гс",
+            "гпрез",
+            "гпрезентации"
         ]
     },
     {
@@ -33210,7 +33260,8 @@ export const bangs = [
             "gt-english",
             "gtenglish",
             "gt",
-            "gtranslate"
+            "gtranslate",
+            "гп"
         ]
     },
     {
@@ -34320,7 +34371,8 @@ export const bangs = [
         "d": "www.google.com",
         "u": "https://www.google.com/search?tbm=vid&q={{{s}}}",
         "ts": [
-            "gv"
+            "gv",
+            "гв"
         ]
     },
     {
@@ -34640,7 +34692,8 @@ export const bangs = [
         "d": "habr.com",
         "u": "https://habr.com/ru/search/?&q={{{s}}}",
         "ts": [
-            "habr"
+            "habr",
+            "хабр"
         ]
     },
     {
@@ -35644,7 +35697,9 @@ export const bangs = [
         "d": "hi-news.ru",
         "u": "https://hi-news.ru/?s={{{s}}}",
         "ts": [
-            "hinews"
+            "hinews",
+            "хайн",
+            "хайньюс"
         ]
     },
     {
@@ -36533,7 +36588,8 @@ export const bangs = [
         "d": "htmlbook.ru",
         "u": "https://htmlbook.ru/search/?as_q={{{s}}}",
         "ts": [
-            "htmlbook"
+            "htmlbook",
+            "хтмлбук"
         ]
     },
     {
@@ -38342,7 +38398,9 @@ export const bangs = [
         "d": "inbox.google.com",
         "u": "https://inbox.google.com/search/{{{s}}}",
         "ts": [
-            "inbox"
+            "inbox",
+            "гмейл",
+            "гпочта"
         ]
     },
     {
@@ -39098,7 +39156,9 @@ export const bangs = [
         "d": "irecommend.ru",
         "u": "https://irecommend.ru/srch?query={{{s}}}",
         "ts": [
-            "irecommend"
+            "irecommend",
+            "айрекомменд",
+            "айрек"
         ]
     },
     {
@@ -41417,7 +41477,9 @@ export const bangs = [
         "d": "keep.google.com",
         "u": "https://keep.google.com/#search/text={{{s}}}",
         "ts": [
-            "keep"
+            "keep",
+            "гзаметки",
+            "гз"
         ]
     },
     {
@@ -41545,7 +41607,8 @@ export const bangs = [
         "d": "kg-portal.ru",
         "u": "https://kg-portal.ru/?search&s_str={{{s}}}",
         "ts": [
-            "kg"
+            "kg",
+            "кг"
         ]
     },
     {
@@ -41804,7 +41867,9 @@ export const bangs = [
         "u": "https://www.kinopoisk.ru/index.php?first=no&what=&kp_query={{{s}}}",
         "ts": [
             "kino",
-            "kpoisk"
+            "kpoisk",
+            "кп",
+            "кинопоиск"
         ]
     },
     {
@@ -42393,6 +42458,14 @@ export const bangs = [
         "u": "https://www.korrekturen.de/suche/searcher.php?q={{{s}}}",
         "ts": [
             "korrekturen"
+        ]
+    },
+    {
+        "s": "King Arthur Baking",
+        "d": "www.kingarthurbaking.com",
+        "u": "https://www.kingarthurbaking.com/search?query={{{s}}}#all_indices",
+        "ts": [
+            "kingarthur"
         ]
     },
     {
@@ -43845,7 +43918,8 @@ export const bangs = [
         "u": "https://dict.leo.org/russisch-deutsch/{{{s}}}",
         "ts": [
             "leoru",
-            "leor"
+            "leor",
+            "лео"
         ]
     },
     {
@@ -44616,7 +44690,8 @@ export const bangs = [
         "d": "lingvolive.ru",
         "u": "https://lingvolive.ru/translate/en-ru/{{{s}}}",
         "ts": [
-            "lingvo"
+            "lingvo",
+            "лингво"
         ]
     },
     {
@@ -44880,7 +44955,8 @@ export const bangs = [
         "d": "www.litres.ru",
         "u": "https://www.litres.ru/pages/rmd_search/?q={{{s}}}",
         "ts": [
-            "litres"
+            "litres",
+            "литрес"
         ]
     },
     {
@@ -45347,7 +45423,8 @@ export const bangs = [
         "d": "www.linux.org.ru",
         "u": "https://www.linux.org.ru/search.jsp?q={{{s}}}&range=ALL&interval=ALL&user=&_usertopic=on",
         "ts": [
-            "lor"
+            "lor",
+            "лор"
         ]
     },
     {
@@ -46470,7 +46547,8 @@ export const bangs = [
         "d": "go.mail.ru",
         "u": "https://go.mail.ru/search?fm=1&q={{{s}}}",
         "ts": [
-            "mailru"
+            "mailru",
+            "мейлру"
         ]
     },
     {
@@ -51227,7 +51305,10 @@ export const bangs = [
         "ts": [
             "mya",
             "yama",
-            "yandexm"
+            "yandexm",
+            "ям",
+            "яма",
+            "ямаркет"
         ]
     },
     {
@@ -51396,7 +51477,8 @@ export const bangs = [
         "d": "myshows.me",
         "u": "https://myshows.me/search/?q={{{s}}}",
         "ts": [
-            "myshows"
+            "myshows",
+            "мш"
         ]
     },
     {
@@ -51431,7 +51513,8 @@ export const bangs = [
             "myt",
             "ytmusic",
             "ytmu",
-            "ytm"
+            "ytm",
+            "ютм"
         ]
     },
     {
@@ -55478,7 +55561,8 @@ export const bangs = [
         "d": "www.opennet.ru",
         "u": "https://www.opennet.ru/search.shtml?exclude=index|/man.shtml&words={{{s}}}",
         "ts": [
-            "opennet"
+            "opennet",
+            "опеннет"
         ]
     },
     {
@@ -56674,7 +56758,8 @@ export const bangs = [
         "d": "www.ozon.ru",
         "u": "https://www.ozon.ru/search/?text={{{s}}}",
         "ts": [
-            "ozon"
+            "ozon",
+            "озон"
         ]
     },
     {
@@ -58522,7 +58607,9 @@ export const bangs = [
         "u": "https://pikabu.ru/search.php?q={{{s}}}",
         "ts": [
             "pikabu",
-            "pkb"
+            "pkb",
+            "пикабу",
+            "пкб"
         ]
     },
     {
@@ -62562,7 +62649,8 @@ export const bangs = [
         "d": "bab.la",
         "u": "https://bab.la/conjugaison/russe/{{{s}}}",
         "ts": [
-            "rconj"
+            "rconj",
+            "спряжение"
         ]
     },
     {
@@ -62602,7 +62690,9 @@ export const bangs = [
         "d": "context.reverso.net",
         "u": "https://context.reverso.net/translation/russian-english/{{{s}}}",
         "ts": [
-            "rcruen"
+            "rcruen",
+            "реверсо",
+            "рк"
         ]
     },
     {
@@ -64957,7 +65047,9 @@ export const bangs = [
         "u": "https://translate.google.com/#ru/en/{{{s}}}",
         "ts": [
             "ruen",
-            "кгут"
+            "кгут",
+            "руан",
+            "руен"
         ]
     },
     {
@@ -64965,7 +65057,9 @@ export const bangs = [
         "d": "translate.google.com",
         "u": "https://translate.google.com/#ru/fr/{{{s}}}",
         "ts": [
-            "rufr"
+            "rufr",
+            "кгак",
+            "руфр"
         ]
     },
     {
@@ -65104,7 +65198,9 @@ export const bangs = [
         "d": "rutube.ru",
         "u": "https://rutube.ru/search.html?page=index&search={{{s}}}&search_type=track",
         "ts": [
-            "rutube"
+            "rutube",
+            "рт",
+            "рутуб"
         ]
     },
     {
@@ -65160,7 +65256,9 @@ export const bangs = [
         "d": "ruxpert.ru",
         "u": "https://ruxpert.ru/index.php?search={{{s}}}",
         "ts": [
-            "rxp"
+            "rxp",
+            "рукс",
+            "руксперт"
         ]
     },
     {
@@ -66336,7 +66434,8 @@ export const bangs = [
         "d": "scpfoundation.net",
         "u": "https://scpfoundation.net/search:site/q/{{{s}}}",
         "ts": [
-            "scpru"
+            "scpru",
+            "сцп"
         ]
     },
     {
@@ -69062,7 +69161,8 @@ export const bangs = [
         "d": "sokr.ru",
         "u": "https://sokr.ru/{{{s}}}/",
         "ts": [
-            "sokr"
+            "sokr",
+            "сокр"
         ]
     },
     {
@@ -69944,7 +70044,8 @@ export const bangs = [
         "d": "squarefaction.ru",
         "u": "https://squarefaction.ru/main/search/google?searchQuery={{{s}}}",
         "ts": [
-            "sqfa"
+            "sqfa",
+            "скфа"
         ]
     },
     {
@@ -73192,7 +73293,9 @@ export const bangs = [
         "d": "te-st.ru",
         "u": "https://te-st.ru/?s={{{s}}}",
         "ts": [
-            "te-st"
+            "te-st",
+            "тст",
+            "теплица"
         ]
     },
     {
@@ -76381,6 +76484,8 @@ export const bangs = [
             "youtube",
             "you",
             "ytb",
+            "ют",
+            "ютуб",
             "υτ"
         ]
     },
@@ -79311,7 +79416,8 @@ export const bangs = [
         "d": "vk.com",
         "u": "https://vk.com/search?c[q]={{{s}}}&c[section]=auto",
         "ts": [
-            "vk"
+            "vk",
+            "вк"
         ]
     },
     {
@@ -79319,7 +79425,8 @@ export const bangs = [
         "d": "vk.com",
         "u": "https://vk.com/video?q={{{s}}}",
         "ts": [
-            "vkv"
+            "vkv",
+            "вкв"
         ]
     },
     {
@@ -80047,7 +80154,8 @@ export const bangs = [
         "d": "google.com",
         "u": "https://google.com/search?tbm=isch&imgsz=xxlarge&gbv=2&safe=off&q={{{s}}}+wallpaper&btnG=Search+Images&tbs=imgo:1",
         "ts": [
-            "wallpaper"
+            "wallpaper",
+            "обои"
         ]
     },
     {
@@ -80156,7 +80264,8 @@ export const bangs = [
         "u": "https://www.world-art.ru/search.php?public_search={{{s}}}&global_sector=all",
         "ts": [
             "waru",
-            "worldart"
+            "worldart",
+            "ворлдарт"
         ]
     },
     {
@@ -80665,7 +80774,9 @@ export const bangs = [
         "d": "webref.ru",
         "u": "https://webref.ru/search/?s={{{s}}}",
         "ts": [
-            "webref"
+            "webref",
+            "вебреф",
+            "вэбреф"
         ]
     },
     {
@@ -81671,7 +81782,8 @@ export const bangs = [
         "d": "ru.wikivoyage.org",
         "u": "https://ru.wikivoyage.org/wiki/Special:Search?search={{{s}}}&go=Go",
         "ts": [
-            "wikivoyageru"
+            "wikivoyageru",
+            "викивояж"
         ]
     },
     {
@@ -82465,7 +82577,8 @@ export const bangs = [
         "d": "wooordhunt.ru",
         "u": "https://wooordhunt.ru/word/{{{s}}}",
         "ts": [
-            "woo"
+            "woo",
+            "воо"
         ]
     },
     {
@@ -84240,7 +84353,8 @@ export const bangs = [
         "d": "ya.ru",
         "u": "https://ya.ru/video/search?text={{{s}}}",
         "ts": [
-            "yav"
+            "yav",
+            "яв"
         ]
     },
     {
@@ -84634,7 +84748,8 @@ export const bangs = [
         "d": "youla.ru",
         "u": "https://youla.ru/?q={{{s}}}",
         "ts": [
-            "youla"
+            "youla",
+            "юла"
         ]
     },
     {
@@ -84922,7 +85037,9 @@ export const bangs = [
             "ys",
             "yad",
             "slov",
-            "yaslovari"
+            "yaslovari",
+            "яп",
+            "яс"
         ]
     },
     {
@@ -84930,7 +85047,8 @@ export const bangs = [
         "d": "tv.youtube.com",
         "u": "https://tv.youtube.com/search/{{{s}}}",
         "ts": [
-            "yttv"
+            "yttv",
+            "юттв"
         ]
     },
     {
