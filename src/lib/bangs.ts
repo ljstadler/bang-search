@@ -11798,7 +11798,8 @@ export const bangs = [
             "c++",
             "cxx",
             "rcpp",
-            "stl"
+            "stl",
+            "cplusplus"
         ]
     },
     {
@@ -15142,14 +15143,6 @@ export const bangs = [
         "u": "https://chipublib.bibliocommons.com/search?&t=title&search_category=title&q={{{s}}}",
         "ts": [
             "cpl"
-        ]
-    },
-    {
-        "s": "Cplusplus.com",
-        "d": "www.cplusplus.com",
-        "u": "https://www.cplusplus.com/query/search.cgi?q={{{s}}}",
-        "ts": [
-            "cplusplus"
         ]
     },
     {
@@ -43359,6 +43352,15 @@ export const bangs = [
         "ts": [
             "law",
             "lii"
+        ]
+    },
+    {
+        "s": "legacy cplusplus.com ",
+        "d": "legacy.cplusplus.com",
+        "u": "https://legacy.cplusplus.com/search.do?q={{{s}}}",
+        "ts": [
+            "lc++",
+            "lcpp"
         ]
     },
     {
@@ -85835,7 +85837,8 @@ export const bangs = [
         "d": "app.thestorygraph.com",
         "u": "https://app.thestorygraph.com/browse?search_term={{{s}}}",
         "ts": [
-            "storygraph"
+            "storygraph",
+            "tsg"
         ]
     },
     {
