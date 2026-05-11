@@ -9862,6 +9862,14 @@ export const bangs = [
         ]
     },
     {
+        "s": "Homebrew Cask",
+        "d": "formulae.brew.sh",
+        "u": "https://formulae.brew.sh/cask/{{{s}}}",
+        "ts": [
+            "brewc"
+        ]
+    },
+    {
         "s": "Home Manager - Option Search",
         "d": "home-manager-options.extranix.com",
         "u": "https://home-manager-options.extranix.com/?query={{{s}}}&release=master",
@@ -24176,8 +24184,8 @@ export const bangs = [
     },
     {
         "s": "ESV Bible",
-        "d": "www.esvbible.org",
-        "u": "https://www.esvbible.org/search/?q={{{s}}}",
+        "d": "www.esv.org",
+        "u": "https://www.esv.org/search/?q={{{s}}}",
         "ts": [
             "esv"
         ]
@@ -29445,7 +29453,7 @@ export const bangs = [
         "d": "docs.godotengine.org",
         "u": "https://docs.godotengine.org/en/latest/search.html?q={{{s}}}&check_keywords=yes&area=default",
         "ts": [
-            "gdd"
+            "godotl"
         ]
     },
     {
@@ -31683,7 +31691,8 @@ export const bangs = [
         "d": "docs.godotengine.org",
         "u": "https://docs.godotengine.org/en/stable/search.html?q={{{s}}}&check_keywords=yes&area=default",
         "ts": [
-            "godot"
+            "godot",
+            "gdd"
         ]
     },
     {
@@ -51736,6 +51745,14 @@ export const bangs = [
         ]
     },
     {
+        "s": "netbible",
+        "d": "netbible.org",
+        "u": "https://netbible.org/bible/search?q={{{s}}}",
+        "ts": [
+            "netbible"
+        ]
+    },
+    {
         "s": "NASDAQ",
         "d": "www.nasdaq.com",
         "u": "https://www.nasdaq.com/symbol/{{{s}}}/real-time",
@@ -56433,6 +56450,14 @@ export const bangs = [
         "u": "https://offerup.com/search/?q={{{s}}}",
         "ts": [
             "oup"
+        ]
+    },
+    {
+        "s": "Olive Young",
+        "d": "global.oliveyoung.com",
+        "u": "https://global.oliveyoung.com/display/search?query={{{s}}}",
+        "ts": [
+            "oliveyoung"
         ]
     },
     {
@@ -62272,15 +62297,6 @@ export const bangs = [
         ]
     },
     {
-        "s": "Resident Advisor",
-        "d": "www.residentadvisor.net",
-        "u": "https://www.residentadvisor.net/search.aspx?searchstr={{{s}}}",
-        "ts": [
-            "ra",
-            "residentadvisor"
-        ]
-    },
-    {
         "s": "Raspberry Pi",
         "d": "www.raspberrypi.org",
         "u": "https://www.raspberrypi.org/search/{{{s}}}",
@@ -63557,6 +63573,15 @@ export const bangs = [
         "ts": [
             "reta-vortaro",
             "revo"
+        ]
+    },
+    {
+        "s": "RetroAchievements",
+        "d": "retroachievements.org",
+        "u": "https://retroachievements.org/search?query={{{s}}}",
+        "ts": [
+            "ra",
+            "retroachievements"
         ]
     },
     {
