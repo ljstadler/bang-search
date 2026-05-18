@@ -16558,8 +16558,8 @@ export const bangs = [
     },
     {
         "s": "Diccionariu de l'Academia de la Llingua Asturiana",
-        "d": "asturianu.elahorcado.net",
-        "u": "https://asturianu.elahorcado.net/search.php?search={{{s}}}",
+        "d": "www.diccionariu.alladixital.org",
+        "u": "https://www.diccionariu.alladixital.org/index.php?pallabra={{{s}}}",
         "ts": [
             "dalla"
         ]
@@ -54202,14 +54202,7 @@ export const bangs = [
         "d": "www.nytimes.com",
         "u": "https://www.nytimes.com/search?query={{{s}}}",
         "ts": [
-            "nytimes"
-        ]
-    },
-    {
-        "s": "New York Times",
-        "d": "query.nytimes.com",
-        "u": "https://query.nytimes.com/search/sitesearch?query={{{s}}}&srchst=cse",
-        "ts": [
+            "nytimes",
             "nyt"
         ]
     },
@@ -55980,7 +55973,6 @@ export const bangs = [
         "d": "tvthek.orf.at",
         "u": "https://tvthek.orf.at/search?q={{{s}}}",
         "ts": [
-            "orf",
             "tvthek"
         ]
     },
@@ -88064,6 +88056,14 @@ export const bangs = [
         "u": "https://kagifeedback.org/?q={{{s}}}",
         "ts": [
             "kf"
+        ]
+    },
+    {
+        "s": "Orion Feedback",
+        "d": "orionfeedback.org",
+        "u": "https://orionfeedback.org/?q={{{s}}}",
+        "ts": [
+            "orf"
         ]
     },
     {
