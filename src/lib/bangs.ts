@@ -79103,7 +79103,7 @@ export const bangs = [
     {
         "s": "VIDAL",
         "d": "www.vidal.fr",
-        "u": "https://www.vidal.fr/recherche/index/q:{{{s}}}/",
+        "u": "https://www.vidal.fr/recherche.html?query={{{s}}}/",
         "ts": [
             "vidal"
         ]
