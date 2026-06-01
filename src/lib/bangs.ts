@@ -6734,7 +6734,7 @@ export const bangs = [
     {
         "s": "Barnes & Noble",
         "d": "www.barnesandnoble.com",
-        "u": "https://www.barnesandnoble.com/s/{{{s}}}",
+        "u": "https://www.barnesandnoble.com/search?q={{{s}}}",
         "ts": [
             "barnesandnoble",
             "b&n",
@@ -85875,6 +85875,16 @@ export const bangs = [
         ]
     },
     {
+        "s": "NixOS Home Manager Options Search",
+        "d": "search.nixos.org",
+        "u": "https://search.nixos.org/options?query={{{s}}}&source=home_manager",
+        "ts": [
+            "nixhopt",
+            "nixhmopt",
+            "nixhmo"
+        ]
+    },
+    {
         "s": "Noogle Nix Function Search",
         "d": "noogle.dev",
         "u": "https://noogle.dev/q?term={{{s}}}",
@@ -86863,6 +86873,14 @@ export const bangs = [
             "wsco",
             "scowiki",
             "wikisco"
+        ]
+    },
+    {
+        "s": "The Software Heritage Archive",
+        "d": "archive.softwareheritage.org",
+        "u": "https://archive.softwareheritage.org/browse/search/?q={{{s}}}",
+        "ts": [
+            "swh"
         ]
     },
     {
