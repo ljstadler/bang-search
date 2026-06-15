@@ -74991,7 +74991,7 @@ export const bangs = [
     {
         "s": "Tori",
         "d": "www.tori.fi",
-        "u": "https://www.tori.fi/koko_suomi?q={{{s}}}",
+        "u": "https://www.tori.fi/recommerce/forsale/search?q={{{s}}}",
         "ts": [
             "tori"
         ]
