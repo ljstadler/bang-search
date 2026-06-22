@@ -9012,8 +9012,8 @@ export const bangs = [
     },
     {
         "s": "Bloons Wiki",
-        "d": "bloons.wikia.com",
-        "u": "https://bloons.wikia.com/search?query={{{s}}}",
+        "d": "www.bloonswiki.com",
+        "u": "https://www.bloonswiki.com/index.php?search={{{s}}}&title=Special%3ASearch",
         "ts": [
             "bloonswiki"
         ]
@@ -10774,6 +10774,14 @@ export const bangs = [
         "u": "https://www.chrono24.com/search/index.htm?watchTypes=&query={{{s}}}&dosearch=true&searchexplain=1&accessoryTypes=",
         "ts": [
             "c24"
+        ]
+    },
+    {
+        "s": "CHZZK",
+        "d": "chzzk.naver.com",
+        "u": "https://chzzk.naver.com/search?query={{{s}}}",
+        "ts": [
+            "chzzk"
         ]
     },
     {
@@ -15464,9 +15472,9 @@ export const bangs = [
         ]
     },
     {
-        "s": "Critical Role Wikia",
-        "d": "criticalrole.wikia.com",
-        "u": "https://criticalrole.wikia.com/wiki/Special:Search?query={{{s}}}",
+        "s": "Critical Role Wiki",
+        "d": "criticalrole.miraheze.org",
+        "u": "https://criticalrole.miraheze.org/w/index.php?search={{{s}}}&title=Special:Search",
         "ts": [
             "critrole"
         ]
@@ -16362,14 +16370,6 @@ export const bangs = [
         ]
     },
     {
-        "s": "Dota2 Gamepedia",
-        "d": "dota2.gamepedia.com",
-        "u": "https://dota2.gamepedia.com/Special:Search/{{{s}}}",
-        "ts": [
-            "d2gp"
-        ]
-    },
-    {
         "s": "Light.gg",
         "d": "www.light.gg",
         "u": "https://www.light.gg/db/search/?q={{{s}}}",
@@ -17163,8 +17163,8 @@ export const bangs = [
     },
     {
         "s": "DEATH BATTLE Wiki",
-        "d": "deathbattle.wikia.com",
-        "u": "https://deathbattle.wikia.com/wiki/Special:Search?fulltext=Search&search={{{s}}}",
+        "d": "deathbattle.miraheze.org",
+        "u": "https://deathbattle.miraheze.org/w/index.php?title=Special:Search&search={{{s}}}",
         "ts": [
             "dbwiki"
         ]
@@ -18215,6 +18215,14 @@ export const bangs = [
         ]
     },
     {
+        "s": "Deltarune Wiki",
+        "d": "deltarune.wiki",
+        "u": "https://deltarune.wiki/index.php?search={{{s}}}&title=Special:Search",
+        "ts": [
+            "deltarune"
+        ]
+    },
+    {
         "s": "Dragen en Voeden Forum",
         "d": "forum.dragen-en-voeden.nl",
         "u": "https://forum.dragen-en-voeden.nl/search.php?keywords={{{s}}}&terms=all&author=&sc=1&sf=all&sr=posts&sk=t&sd=d&st=0&ch=300&t=0&submit=Zoek",
@@ -18503,11 +18511,12 @@ export const bangs = [
     {
         "s": "DwarfFortress Wiki",
         "d": "dwarffortresswiki.org",
-        "u": "https://dwarffortresswiki.org/index.php?title=Special:Search&search={{{s}}}&go=Go",
+        "u": "https://dwarffortresswiki.org/index.php?title=Special:Search&search={{{s}}}",
         "ts": [
             "dfw",
             "dfwiki",
-            "dorf"
+            "dorf",
+            "dwarf"
         ]
     },
     {
@@ -19204,11 +19213,12 @@ export const bangs = [
         ]
     },
     {
-        "s": "discworld",
-        "d": "discworld.wikia.com",
-        "u": "https://discworld.wikia.com/wiki/Special:Search?query={{{s}}}",
+        "s": "Terry Pratchett Wiki",
+        "d": "wiki.lspace.org",
+        "u": "https://wiki.lspace.org/index.php?search={{{s}}}&title=Special%3ASearch",
         "ts": [
-            "discworld"
+            "discworld",
+            "pratchett"
         ]
     },
     {
@@ -21164,14 +21174,6 @@ export const bangs = [
         ]
     },
     {
-        "s": "dwarf fortress wiki",
-        "d": "dwarffortresswiki.org",
-        "u": "https://dwarffortresswiki.org/index.php?search={{{s}}}",
-        "ts": [
-            "dwarf"
-        ]
-    },
-    {
         "s": "Deutsches Wörterbuch von Jacob Grimm und Wilhelm Grimm",
         "d": "woerterbuchnetz.de",
         "u": "https://woerterbuchnetz.de/DWB/?lemma={{{s}}}",
@@ -21353,8 +21355,8 @@ export const bangs = [
     },
     {
         "s": "Earthbound Wiki",
-        "d": "earthbound.wikia.com",
-        "u": "https://earthbound.wikia.com/wiki/Special:Search?search={{{s}}}",
+        "d": "wikibound.info",
+        "u": "https://wikibound.info/w/index.php?title=Special%3ASearch&search={{{s}}}",
         "ts": [
             "earthbound"
         ]
@@ -22541,14 +22543,6 @@ export const bangs = [
         "u": "https://www.elconjugador.com/conjugaison/verbe/espagnol/{{{s}}}.html",
         "ts": [
             "elconjugador"
-        ]
-    },
-    {
-        "s": "Elder Scrolls Wiki (Page)",
-        "d": "elderscrolls.wikia.com",
-        "u": "https://elderscrolls.wikia.com/wiki/index.php?search={{{s}}}&fulltext=Search",
-        "ts": [
-            "elderwiki"
         ]
     },
     {
@@ -33063,8 +33057,8 @@ export const bangs = [
     },
     {
         "s": "GTA Wiki",
-        "d": "gta.fandom.com",
-        "u": "https://gta.fandom.com/search?query={{{s}}}",
+        "d": "gta.wiki",
+        "u": "https://gta.wiki/?search={{{s}}}&title=Special%3ASearch",
         "ts": [
             "gtawiki"
         ]
@@ -36985,8 +36979,8 @@ export const bangs = [
     },
     {
         "s": "Hypixel Skyblock Wiki",
-        "d": "hypixel-skyblock.fandom.com",
-        "u": "https://hypixel-skyblock.fandom.com/wiki/Special:Search?query={{{s}}}",
+        "d": "hypixelskyblock.minecraft.wiki",
+        "u": "https://hypixelskyblock.minecraft.wiki/?search={{{s}}}&title=Special:Search",
         "ts": [
             "hysb"
         ]
@@ -37542,14 +37536,6 @@ export const bangs = [
         "u": "https://www.nv5geospatialsoftware.com/docs/SearchResults.aspx?q={{{s}}}",
         "ts": [
             "idl"
-        ]
-    },
-    {
-        "s": "THE IDOLM@STER Wiki",
-        "d": "idolmaster.wikia.com",
-        "u": "https://idolmaster.wikia.com/wiki/Special:Search?search={{{s}}}&fulltext=Search",
-        "ts": [
-            "idolmawiki"
         ]
     },
     {
@@ -38139,17 +38125,11 @@ export const bangs = [
     },
     {
         "s": "Project iM@S Wiki",
-        "d": "www.project-imas.com",
-        "u": "https://www.project-imas.com/w/index.php?search={{{s}}}&title=Special:Search&go=Go",
+        "d": "project-imas.wiki",
+        "u": "https://project-imas.wiki/index.php?search={{{s}}}&title=Special%3ASearch",
         "ts": [
-            "imas"
-        ]
-    },
-    {
-        "s": "project-imas.com wiki",
-        "d": "www.project-imas.com",
-        "u": "https://www.project-imas.com/w/index.php?search={{{s}}}",
-        "ts": [
+            "imas",
+            "idolmawiki",
             "imaswiki"
         ]
     },
@@ -45471,14 +45451,6 @@ export const bangs = [
         ]
     },
     {
-        "s": "One Wiki to Rule Them All:  The Lord of the Rings Wiki",
-        "d": "lotr.wikia.com",
-        "u": "https://lotr.wikia.com/wiki/Special:Search?query={{{s}}}",
-        "ts": [
-            "lotr"
-        ]
-    },
-    {
         "s": "LOTRO-Wiki",
         "d": "lotro-wiki.com",
         "u": "https://lotro-wiki.com/index.php?search={{{s}}}&button=&title=Special:Search",
@@ -47668,6 +47640,15 @@ export const bangs = [
         ]
     },
     {
+        "s": "Modrinth (Project by slug)",
+        "d": "modrinth.com",
+        "u": "https://modrinth.com/project/{{{s}}}",
+        "ts": [
+            "mdproject",
+            "mrproject"
+        ]
+    },
+    {
         "s": "Modrinth (Mods)",
         "d": "modrinth.com",
         "u": "https://modrinth.com/mods?q={{{s}}}",
@@ -47761,14 +47742,6 @@ export const bangs = [
         "u": "https://mcpedl.com/?s={{{s}}}",
         "ts": [
             "mcpedl"
-        ]
-    },
-    {
-        "s": "Minecraft Pocket Edition Wiki",
-        "d": "minecraftpocketedition.wikia.com",
-        "u": "https://minecraftpocketedition.wikia.com/wiki/Special:Search?search={{{s}}}&fulltext=Search",
-        "ts": [
-            "mcpew"
         ]
     },
     {
@@ -48243,18 +48216,11 @@ export const bangs = [
         ]
     },
     {
-        "s": "Megami Tensei Wikia",
-        "d": "megamitensei.wikia.com",
-        "u": "https://megamitensei.wikia.com/wiki/Special:Search?search={{{s}}}&fulltext=Search",
-        "ts": [
-            "megamitensei"
-        ]
-    },
-    {
         "s": "Megami Tensei Wiki",
-        "d": "megamitensei.wikia.com",
-        "u": "https://megamitensei.wikia.com/wiki/Special:Search?search={{{s}}}",
+        "d": "megatenwiki.com",
+        "u": "https://megatenwiki.com/index.php?search={{{s}}}&title=Special%3ASearch",
         "ts": [
+            "megamitensei",
             "megatenw"
         ]
     },
@@ -49090,14 +49056,6 @@ export const bangs = [
         ]
     },
     {
-        "s": "Minecraft Wiki",
-        "d": "minecraft.gamepedia.com",
-        "u": "https://minecraft.gamepedia.com/index.php?search={{{s}}}",
-        "ts": [
-            "minecratwiki"
-        ]
-    },
-    {
         "s": "Ming Pao",
         "d": "news.mingpao.com",
         "u": "https://news.mingpao.com/cfm/search2.cfm?keywords={{{s}}}",
@@ -49471,9 +49429,9 @@ export const bangs = [
         ]
     },
     {
-        "s": "My Little Pony: Friendship is Magic Wiki",
-        "d": "mlp.wikia.com",
-        "u": "https://mlp.wikia.com/wiki/Special:Search?search={{{s}}}",
+        "s": "Equestripedia",
+        "d": "equestripedia.org",
+        "u": "https://equestripedia.org/w/index.php?search={{{s}}}&title=Special%3ASearch",
         "ts": [
             "mlp"
         ]
@@ -60830,6 +60788,16 @@ export const bangs = [
         ]
     },
     {
+        "s": "Podcast Index",
+        "d": "podcastindex.org",
+        "u": "https://podcastindex.org/search?{{{s}}}&type=all",
+        "ts": [
+            "podindex",
+            "poddex",
+            "podcastindex"
+        ]
+    },
+    {
         "s": "PSDDude Photoshop Tutorials",
         "d": "www.psd-dude.com",
         "u": "https://www.psd-dude.com/tutorials/?search={{{s}}}",
@@ -61272,8 +61240,8 @@ export const bangs = [
     },
     {
         "s": "Plants vs. Zombies Wiki",
-        "d": "plantsvszombies.wikia.com",
-        "u": "https://plantsvszombies.wikia.com/wiki/Special:Search?query={{{s}}}",
+        "d": "plantsvszombies.wiki.gg",
+        "u": "https://plantsvszombies.wiki.gg/wiki/Special:Search?search={{{s}}}",
         "ts": [
             "pvz"
         ]
@@ -64225,7 +64193,7 @@ export const bangs = [
         ]
     },
     {
-        "s": "Roblox Experiences",
+        "s": "Roblox Games",
         "d": "www.roblox.com",
         "u": "https://www.roblox.com/discover/?Keyword={{{s}}}",
         "ts": [
@@ -69046,6 +69014,14 @@ export const bangs = [
         ]
     },
     {
+        "s": "SOOP",
+        "d": "www.sooplive.com",
+        "u": "https://www.sooplive.com/search?szKeyword={{{s}}}",
+        "ts": [
+            "soop"
+        ]
+    },
+    {
         "s": "StackOverflow Companies",
         "d": "stackoverflow.com",
         "u": "https://stackoverflow.com/jobs/companies?q={{{s}}}",
@@ -69869,19 +69845,12 @@ export const bangs = [
         ]
     },
     {
-        "s": "SpongeBob Wikia",
-        "d": "spongebob.wikia.com",
-        "u": "https://spongebob.wikia.com/wiki/Special:Search?search={{{s}}}&fulltext=Search",
-        "ts": [
-            "spongebob"
-        ]
-    },
-    {
         "s": "Encyclopedia SpongeBobia",
         "d": "spongebob.fandom.com",
         "u": "https://spongebob.fandom.com/wiki/Special:Search?search={{{s}}}",
         "ts": [
-            "sponge"
+            "sponge",
+            "spongebob"
         ]
     },
     {
@@ -71039,9 +71008,9 @@ export const bangs = [
         ]
     },
     {
-        "s": "Slay the spire Wiki | Fandom powered by Wikia",
-        "d": "slay-the-spire.fandom.com",
-        "u": "https://slay-the-spire.fandom.com/wiki/Special:Search?query={{{s}}}",
+        "s": "Slay the Spire Wiki",
+        "d": "slaythespire.wiki.gg",
+        "u": "https://slaythespire.wiki.gg/wiki/Special:Search?search={{{s}}}",
         "ts": [
             "stsw"
         ]
@@ -71211,8 +71180,8 @@ export const bangs = [
     },
     {
         "s": "Subnautica Wiki",
-        "d": "subnautica.wikia.com",
-        "u": "https://subnautica.wikia.com/wiki/Special:Search?search={{{s}}}",
+        "d": "wiki.subnautica.com",
+        "u": "https://wiki.subnautica.com/sn/?search={{{s}}}&title=Special%3ASearch",
         "ts": [
             "subnautica"
         ]
@@ -73318,14 +73287,6 @@ export const bangs = [
         ]
     },
     {
-        "s": "The Elder Scrolls WIki",
-        "d": "elderscrolls.wikia.com",
-        "u": "https://elderscrolls.wikia.com/wiki/Special:Search?search={{{s}}}",
-        "ts": [
-            "teswiki"
-        ]
-    },
-    {
         "s": "TEU",
         "d": "eur-lex.europa.eu",
         "u": "https://eur-lex.europa.eu/search.html?wh0=DN=12012M*&lbStatus=ALL&qid=1459001887262&DTS_DOM=EU_LAW&ARTICLE_NUM={{{s}}}&treatyStatus=ARTICLE_NUMBER&type=advanced&lang=en&SUBDOM_INIT=TREATIES&legalCelex=TEU_2012&DTS_SUBDOM=TREATIES",
@@ -73502,7 +73463,8 @@ export const bangs = [
         "ts": [
             "tgate",
             "tolkiengateway",
-            "tolkien"
+            "tolkien",
+            "lotr"
         ]
     },
     {
@@ -76892,9 +76854,11 @@ export const bangs = [
     {
         "s": "The Unofficial Elder Scrolls Pages",
         "d": "en.uesp.net",
-        "u": "https://en.uesp.net/w/index.php?title=Special:Search&profile=default&search={{{s}}}&fulltext=Search",
+        "u": "https://en.uesp.net/w/index.php?title=Special%3ASearch&search={{{s}}}",
         "ts": [
-            "uesp"
+            "uesp",
+            "teswiki",
+            "elderwiki"
         ]
     },
     {
@@ -77311,9 +77275,9 @@ export const bangs = [
         ]
     },
     {
-        "s": "Undertale wiki",
-        "d": "undertale.wikia.com",
-        "u": "https://undertale.wikia.com/wiki/Special:Search?search={{{s}}}&fulltext=Search",
+        "s": "Undertale Wiki",
+        "d": "undertale.wiki",
+        "u": "https://undertale.wiki/index.php?search={{{s}}}&title=Special:Search",
         "ts": [
             "undertale"
         ]
@@ -80361,6 +80325,16 @@ export const bangs = [
         ]
     },
     {
+        "s": "Wavedash",
+        "d": "wavedash.com",
+        "u": "https://wavedash.com/browse?q={{{s}}}",
+        "ts": [
+            "wavedash",
+            "wvd",
+            "wvdsh"
+        ]
+    },
+    {
         "s": "Wolfram Alpha",
         "d": "wolframalpha.com",
         "u": "https://wolframalpha.com/input?i={{{s}}}",
@@ -81404,6 +81378,14 @@ export const bangs = [
         "u": "https://www.who.is/whois/{{{s}}}",
         "ts": [
             "who"
+        ]
+    },
+    {
+        "s": "RDAP",
+        "d": "client.rdap.org",
+        "u": "https://client.rdap.org/?object={{{s}}}",
+        "ts": [
+            "rdap"
         ]
     },
     {
@@ -84029,8 +84011,8 @@ export const bangs = [
     },
     {
         "s": "Xenoblade Wiki",
-        "d": "xenoblade.wikia.com",
-        "u": "https://xenoblade.wikia.com/wiki/Special:Search?search={{{s}}}",
+        "d": "www.xenoserieswiki.org",
+        "u": "https://www.xenoserieswiki.org/w/index.php?search={{{s}}}&title=Special%3ASearch",
         "ts": [
             "xenoblade"
         ]
@@ -84920,7 +84902,7 @@ export const bangs = [
     {
         "s": "YouTube Channel",
         "d": "www.youtube.com",
-        "u": "https://www.youtube.com/user/{{{s}}}",
+        "u": "https://www.youtube.com/results?search_query={{{s}}}&sp=EgIQAg%253D%253D",
         "ts": [
             "ytc"
         ]
