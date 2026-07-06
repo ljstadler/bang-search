@@ -54246,6 +54246,24 @@ export const bangs = [
         ]
     },
     {
+        "s": "Oxlint (Rule)",
+        "d": "oxc.rs",
+        "u": "https://oxc.rs/docs/guide/usage/linter/rules/{{{s}}}",
+        "ts": [
+            "oxlint"
+        ]
+    },
+    {
+        "s": "Oxlint (ESLint Rule)",
+        "d": "oxc.rs",
+        "u": "https://oxc.rs/docs/guide/usage/linter/rules/eslint/{{{s}}}",
+        "ts": [
+            "oxlinte",
+            "oxlintes",
+            "oxlinteslint"
+        ]
+    },
+    {
         "s": "OverAPI Cheatsheet",
         "d": "overapi.com",
         "u": "https://overapi.com/{{{s}}}",
@@ -60790,7 +60808,7 @@ export const bangs = [
     {
         "s": "Podcast Index",
         "d": "podcastindex.org",
-        "u": "https://podcastindex.org/search?{{{s}}}&type=all",
+        "u": "https://podcastindex.org/search?q={{{s}}}&type=all",
         "ts": [
             "podindex",
             "poddex",
@@ -65570,14 +65588,6 @@ export const bangs = [
         "u": "https://wiki.samba.org/index.php?title=Special:Search&search={{{s}}}&go=Go",
         "ts": [
             "samba"
-        ]
-    },
-    {
-        "s": "whosampled",
-        "d": "www.whosampled.com",
-        "u": "https://www.whosampled.com/search/artists/?q={{{s}}}",
-        "ts": [
-            "sampled"
         ]
     },
     {
@@ -81349,11 +81359,34 @@ export const bangs = [
         ]
     },
     {
-        "s": "Who Sampled",
+        "s": "WhoSampled",
         "d": "whosampled.com",
         "u": "https://whosampled.com/search/?q={{{s}}}",
         "ts": [
-            "whosampled"
+            "whosampled",
+            "whosam"
+        ]
+    },
+    {
+        "s": "WhoSampled (Artists)",
+        "d": "www.whosampled.com",
+        "u": "https://www.whosampled.com/search/artists/?q={{{s}}}",
+        "ts": [
+            "whosama",
+            "whosamart",
+            "whosamartist",
+            "whosamartists",
+            "sampled"
+        ]
+    },
+    {
+        "s": "WhoSampled (Tracks)",
+        "d": "www.whosampled.com",
+        "u": "https://www.whosampled.com/search/tracks/?q={{{s}}}",
+        "ts": [
+            "whosamt",
+            "whosamtrack",
+            "whosamtracks"
         ]
     },
     {
