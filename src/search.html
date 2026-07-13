@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="stylesheet" href="/styles.css" />
+        <meta name="description" content="Client-side !bang-powered search engine" />
+        <title>Bang Search</title>
+    </head>
+    <body>
+        <script type="module">
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("sw.js");
+            }
+
+            import { bangs } from "/bangs.js";
+
+            const defaultBang = bangs.find((bang) => bang.ts.includes("ecosia"));
+
+            const paramsString = window.location.search;
+            const searchParams = new URLSearchParams(paramsString);
+            const query = searchParams.get("q");
+
+            if (!query) {
+                window.location.replace(window.location.origin);
+            } else {
+                const parts = query.trim().split(" ");
+                let selectedBang = defaultBang;
+                const cleanParts = [];
+
+                for (const part of parts) {
+                    if (part.startsWith("!")) {
+                        const bang = bangs.find((bang) => bang.ts.includes(part.substring(1)));
+                        if (bang) {
+                            selectedBang = bang;
+                            continue;
+                        }
+                    }
+                    cleanParts.push(part);
+                }
+
+                const cleanQuery = cleanParts.join(" ");
+
+                const url =
+                    cleanQuery === ""
+                        ? `https://${selectedBang.d}`
+                        : selectedBang.u.replace(
+                              "{{{s}}}",
+                              encodeURIComponent(cleanQuery).replaceAll("%2F", "/"),
+                          );
+
+                window.location.replace(url);
+            }
+        </script>
+    </body>
+</html>

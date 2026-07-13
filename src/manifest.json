@@ -1,0 +1,7 @@
+{
+    "background_color": "#000000",
+    "display": "standalone",
+    "name": "Bang Search",
+    "start_url": "/",
+    "theme_color": "#000000"
+}

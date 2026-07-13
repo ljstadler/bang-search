@@ -10,13 +10,3 @@ updates:
           actions-dependencies:
               patterns:
                   - "*"
-
-    - package-ecosystem: "bun"
-      directory: "/"
-      schedule:
-          interval: "weekly"
-          time: "00:00"
-      groups:
-          dependencies:
-              patterns:
-                  - "*"

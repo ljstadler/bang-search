@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="stylesheet" href="/styles.css" />
+        <meta name="description" content="Client-side !bang-powered search engine" />
+        <title>Bang Search</title>
+    </head>
+    <body>
+        <div class="field">
+            <label for="defaultBang">Default Bang</label>
+            <input id="defaultBang" type="text" value="ecosia" />
+        </div>
+        <div class="field">
+            <label for="searchUrl">Search URL</label>
+            <div class="input-row">
+                <input id="searchUrl" type="text" value="/search?q=!ecosia+%s" readonly />
+                <button id="copyButton" title="Copy">
+                    <img id="copyIcon" src="/clipboard.svg" alt="Clipboard" />
+                </button>
+            </div>
+        </div>
+        <script>
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("sw.js");
+            }
+
+            const defaultBang = document.getElementById("defaultBang");
+            const copyButton = document.getElementById("copyButton");
+            const copyIcon = document.getElementById("copyIcon");
+
+            defaultBang.addEventListener("input", (e) => {
+                document.getElementById("searchUrl").value = `/search?q=!${e.target.value}+%s`;
+            });
+            copyButton.addEventListener("click", async () => {
+                copyButton.disabled = true;
+                copyIcon.src = "/clipboard-check.svg";
+                await navigator.clipboard.writeText(
+                    `${window.location.origin}${document.getElementById("searchUrl").value}`,
+                );
+                setTimeout(() => {
+                    copyButton.disabled = false;
+                    copyIcon.src = "/clipboard.svg";
+                }, 2000);
+            });
+        </script>
+    </body>
+</html>

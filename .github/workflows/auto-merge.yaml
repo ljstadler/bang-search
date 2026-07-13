@@ -26,16 +26,6 @@ jobs:
                   bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
                   ./actionlint -color -shellcheck ""
 
-            - name: Set up Bun
-              if: steps.metadata.outputs.dependency-group == 'dependencies'
-              uses: oven-sh/setup-bun@v2
-
-            - name: Check dependencies
-              if: steps.metadata.outputs.dependency-group == 'dependencies'
-              run: |
-                  bun install
-                  bun run build
-
     auto-merge:
         needs: check
 
