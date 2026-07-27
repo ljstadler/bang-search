@@ -1,20 +1,32 @@
-import { writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 
 (async () => {
-    const res = await fetch(
+    const currentBangsString = await readFile("src/bangs.js", "utf-8");
+
+    const response = await fetch(
         "https://raw.githubusercontent.com/kagisearch/bangs/refs/heads/main/data/bangs.json",
     );
 
-    const data = await res.json();
+    const json = await response.json();
 
-    const bangs = data
-        .filter((bang) => !bang.d.includes("kagi.com") && !bang.ad && !bang.x)
-        .map((bang) => ({
-            s: bang.s,
-            d: bang.d,
-            u: bang.u,
-            ts: [bang.t, ...(bang.ts ?? [])],
-        }));
+    const newBangs = {};
 
-    await writeFile("src/bangs.js", `export const bangs = ${JSON.stringify(bangs)}`);
+    json.filter((bang) => !bang.d.includes("kagi.com") && !bang.ad && !bang.x).forEach((bang) => {
+        newBangs[bang.t] = { d: bang.d, u: bang.u };
+        bang.ts?.forEach((t) => (newBangs[t] = { d: bang.d, u: bang.u }));
+    });
+
+    const newBangsString = `export const bangs = ${JSON.stringify(newBangs)}`;
+
+    if (currentBangsString !== newBangsString) {
+        await writeFile("src/bangs.js", newBangsString);
+
+        const sw = await readFile("src/sw.js", "utf-8");
+
+        const lines = sw.split("\n");
+
+        lines[0] = `const VERSION = "${Date.now()}";`;
+
+        await writeFile("src/sw.js", lines.join("\n"));
+    }
 })();

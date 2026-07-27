@@ -1,17 +1,15 @@
-const VERSION = "v1.0.0";
+const VERSION = "1785137683690";
 
 const CACHE_NAME = `bang-search-${VERSION}`;
 
 const APP_STATIC_RESOURCES = [
     "./",
     "./bangs.js",
-    "./clipboard-check.svg",
-    "./clipboard.svg",
     "./favicon.ico",
+    "./index.css",
     "./index.html",
+    "./index.js",
     "./manifest.json",
-    "./search.html",
-    "./styles.css",
 ];
 
 self.addEventListener("install", (event) => {
@@ -32,7 +30,6 @@ self.addEventListener("activate", (event) => {
                     if (name !== CACHE_NAME) {
                         return caches.delete(name);
                     }
-                    return undefined;
                 }),
             );
             await clients.claim();
@@ -41,39 +38,19 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
+    if (event.request.mode === "navigate") {
+        event.respondWith(caches.match("./"));
+        return;
+    }
+
     event.respondWith(
         (async () => {
             const cache = await caches.open(CACHE_NAME);
-            const url = new URL(event.request.url);
-
-            const cached = await cache.match(event.request);
-
-            if (cached) {
-                event.waitUntil(
-                    fetch(event.request)
-                        .then((resp) => {
-                            if (resp.ok) cache.put(event.request, resp.clone());
-                        })
-                        .catch(() => {}),
-                );
-                return cached;
+            const cachedResponse = await cache.match(event.request);
+            if (cachedResponse) {
+                return cachedResponse;
             }
-            try {
-                const networkResp = await fetch(event.request);
-                if (networkResp.ok) {
-                    cache.put(event.request, networkResp.clone());
-                }
-                return networkResp;
-            } catch {
-                if (event.request.mode === "navigate") {
-                    let path = url.pathname;
-                    if (path === "/") path = "/index.html";
-                    if (!path.includes(".")) path += ".html";
-                    const fallback = await cache.match(path);
-                    if (fallback) return fallback;
-                }
-                return new Response(null, { status: 404 });
-            }
+            return new Response(null, { status: 404 });
         })(),
     );
 });
