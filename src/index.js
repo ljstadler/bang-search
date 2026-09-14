@@ -1,4 +1,19 @@
-if (window.location.pathname === "/search") {
+if (window.location.pathname === "/bangs") {
+    const { bangs } = await import("./bangs.js");
+
+    const siteTriggers = {};
+    for (const [key, value] of Object.entries(bangs)) {
+        if (!siteTriggers[value.s]) {
+            siteTriggers[value.s] = [key];
+        } else {
+            siteTriggers[value.s].push(key);
+        }
+    }
+
+    document.querySelector("#app").innerHTML = Object.entries(siteTriggers)
+        .map(([k, v]) => `<p><strong>${k}</strong>: ${v.join(", ")}</p>`)
+        .join("");
+} else if (window.location.pathname === "/search") {
     const { bangs } = await import("./bangs.js");
 
     const defaultBang = bangs["ecosia"];
@@ -36,6 +51,8 @@ if (window.location.pathname === "/search") {
     }
 } else {
     document.querySelector("#app").innerHTML = `
-        <h1>${window.location.origin}/search?q=!ecosia+%s</h1>
+        <strong>${window.location.origin}/search?q=!ecosia+%s</strong>
+        <p>Performs client-side bang redirects using last valid bang in search query, discarding all other valid bangs</p>
+        <a href="/bangs">Bangs</a>
     `;
 }

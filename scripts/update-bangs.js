@@ -12,8 +12,8 @@ import { readFile, writeFile } from "node:fs/promises";
     const newBangs = {};
 
     json.filter((bang) => !bang.d.includes("kagi.com") && !bang.ad && !bang.x).forEach((bang) => {
-        newBangs[bang.t] = { d: bang.d, u: bang.u };
-        bang.ts?.forEach((t) => (newBangs[t] = { d: bang.d, u: bang.u }));
+        newBangs[bang.t] = { d: bang.d, s: bang.s, u: bang.u };
+        bang.ts?.forEach((t) => (newBangs[t] = { d: bang.d, s: bang.s, u: bang.u }));
     });
 
     const newBangsString = `export const bangs = ${JSON.stringify(newBangs)}`;
