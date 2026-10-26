@@ -1,4 +1,4 @@
-const VERSION = "1792387590336";
+const VERSION = "1792992759246";
 
 const CACHE_NAME = `bang-search-${VERSION}`;
 
